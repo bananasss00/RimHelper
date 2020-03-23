@@ -17,8 +17,15 @@ namespace RimHelperProxyMod.Functions
 {
     public static class Apparels
     {
+        /// <summary>
+        /// New CE support. 23.03.2020
+        /// </summary>
+        private static bool ceSharpStatWorker, ceBluntStatWorker;
         public static List<IPCInterface.Rows.Apparel> Get()
         {
+            ceSharpStatWorker = StatDef.Named("BodyPartSharpArmor")?.workerClass?.Assembly.GetName().Name?.Equals("CombatExtended") ?? false;
+            ceBluntStatWorker = StatDef.Named("BodyPartBluntArmor")?.workerClass?.Assembly.GetName().Name?.Equals("CombatExtended") ?? false;
+            
             var rows = new List<IPCInterface.Rows.Apparel>();
 
             var dataSources = from d in DefDatabase<ThingDef>.AllDefs
@@ -70,12 +77,15 @@ namespace RimHelperProxyMod.Functions
                 if (defStuff != null)
                     row.Label += $"({defStuff.label})";
 
+                var ArmorRating_Blunt = d.GetStatValueAbstract(StatDefOf.ArmorRating_Blunt, defStuff).Nullify();
+                var ArmorRating_Sharp = d.GetStatValueAbstract(StatDefOf.ArmorRating_Sharp, defStuff).Nullify();
+
                 row.Material = defStuff?.label;
                 row.CanCraft = d.CanCraft();
                 row.Body = String.Join(",", d.apparel.bodyPartGroups.Select(x => x.LabelCap).ToArray());
                 row.Layer = String.Join(",", d.apparel.layers.Select(x => x.LabelCap).ToArray());
-                row.ArmorBlunt = d.GetStatValueAbstract(StatDefOf.ArmorRating_Blunt, defStuff).Nullify().ToPercent();
-                row.ArmorSharp = d.GetStatValueAbstract(StatDefOf.ArmorRating_Sharp, defStuff).Nullify().ToPercent();
+                row.ArmorBlunt = ceBluntStatWorker ? ArmorRating_Blunt.RoundTo2() : ArmorRating_Blunt.ToPercent();
+                row.ArmorSharp = ceSharpStatWorker ? ArmorRating_Sharp.RoundTo2() : ArmorRating_Sharp.ToPercent();
                 row.ArmorHeat = d.GetStatValueAbstract(StatDefOf.ArmorRating_Heat, defStuff).Nullify().ToPercent();
                 row.InsulationCold = d.GetStatValueAbstract(StatDefOf.Insulation_Cold, defStuff).Nullify().RoundTo2();
                 row.InsulationHeat = d.GetStatValueAbstract(StatDefOf.Insulation_Heat, defStuff).Nullify().RoundTo2();
