@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2CA5CED9-1FDD-41E5-9660-0030BFF4BD79}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RimHelperProxyMod</RootNamespace>
+    <AssemblyName>RimHelperProxyMod</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;RIMWORLD_MOD,THREAD_TICK</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;RIMWORLD_MOD</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>C:\Games\RimWorld v1.0.2282\Mods\HugsLib\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>C:\Games\RimWorld v1.0.2282\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Games\RimWorld v1.0.2282\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Extensions\ReflectionExtensions.cs" />
+    <Compile Include="Extensions\AnimalExtensions.cs" />
+    <Compile Include="Extensions\FloatExtensions.cs" />
+    <Compile Include="Extensions\ObjectDumperExtensions.cs" />
+    <Compile Include="Extensions\PawnExtensions.cs" />
+    <Compile Include="Extensions\ThingDefExtensions.cs" />
+    <Compile Include="Extensions\UtilsExtensions.cs" />
+    <Compile Include="Functions\Tools.cs" />
+    <Compile Include="Functions\Facilities.cs" />
+    <Compile Include="Functions\HarmonyBrowser.cs" />
+    <Compile Include="Functions\InjectDll.cs" />
+    <Compile Include="Functions\Apparels.cs" />
+    <Compile Include="Functions\Profiling\HarmonyProfiler.cs" />
+    <Compile Include="Functions\BodyParts.cs" />
+    <Compile Include="Functions\WeaponsMelee.cs" />
+    <Compile Include="Functions\CEAmmos.cs" />
+    <Compile Include="Functions\WeaponsRanged.cs" />
+    <Compile Include="Functions\PawnsHediffs.cs" />
+    <Compile Include="Functions\ActiveIncidents.cs" />
+    <Compile Include="Functions\Debuffs.cs" />
+    <Compile Include="Functions\Drugs.cs" />
+    <Compile Include="Functions\Animals.cs" />
+    <Compile Include="Functions\BuildingStuffDump.cs" />
+    <Compile Include="Functions\BuildingsFromMaterials.cs" />
+    <Compile Include="Functions\Materials.cs" />
+    <Compile Include="Functions\WeaponApparelDump.cs" />
+    <Compile Include="Harmony\DisableGraphicLoad.cs" />
+    <Compile Include="Harmony\Patches.cs" />
+    <Compile Include="RimHelperProxy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IPCInterface\IPCInterface.csproj">
+      <Project>{7e24fc2c-90a3-47cb-8689-9fedb15e4356}</Project>
+      <Name>IPCInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,307 @@
+<LocalizeData>
+
+<GUI>
+	
+	<Message_LangChanged>Язык был изменен. Необходим перезапуск</Message_LangChanged>
+	
+	<Menu_VisibleColumns>Видимость колонок</Menu_VisibleColumns>
+	<Menu_HideNullColumns>Скрыть пустые колонки</Menu_HideNullColumns>
+	<Menu_Cart>Корзина</Menu_Cart>
+	<Menu_AddInCart>Добавить в корзину</Menu_AddInCart>
+	<Menu_RemoveFromCart>Удалить из корзины</Menu_RemoveFromCart>
+	<Menu_ClearCart>Очистить корзину</Menu_ClearCart>
+	<Menu_Language>Язык</Menu_Language>
+	<Menu_Export>Экспорт в excel</Menu_Export>
+	<Menu_ExportTab>Текущая вкладка</Menu_ExportTab>
+	<Menu_ExportAllTabs>Все вкладки</Menu_ExportAllTabs>
+	<Menu_Incidents>Инциденты</Menu_Incidents>
+	<Menu_PawnHediffs>Pawns Hediffs</Menu_PawnHediffs>
+	<Menu_InjectDllAndRun>Runtime InjectDll and Run</Menu_InjectDllAndRun>
+	
+	<Tab_Materials>Материалы</Tab_Materials>
+	<Tab_WeaponsRanged>Оружия дальнего боя</Tab_WeaponsRanged>
+	<Tab_WeaponsMelee>Оружия ближнего боя</Tab_WeaponsMelee>
+	<Tab_Apparel>Одежда</Tab_Apparel>
+	<Tab_BuildingsFromMaterial>Постройки из материалов</Tab_BuildingsFromMaterial>
+	<Tab_Animals>Животные</Tab_Animals>
+	<Tab_Debuffs>Дебафы</Tab_Debuffs>
+	<Tab_Drugs>Вещества</Tab_Drugs>
+	<Tab_BodyParts>Протезы</Tab_BodyParts>
+	<Tab_Facilities>Апгрейды построек</Tab_Facilities>
+	<Tab_CEAmmos>CE: Патроны</Tab_CEAmmos>
+	<Tab_Tools>HSK: Инструменты</Tab_Tools>
+
+	<Button_ClearTabsCache_Tooltip>Сбросить кеш для всех вкладок</Button_ClearTabsCache_Tooltip>
+	
+	<!--Menu_VisibleColumns-->
+	<Button_All>Все</Button_All>
+	<Button_Nothing>Ничего</Button_Nothing>
+	
+	<!--ApparelFilter-Form-->
+	<Button_OpenFilterForm>Подбор одежды</Button_OpenFilterForm>
+	<Combo1_Item_WithRecipe>С рецептом</Combo1_Item_WithRecipe>
+	<Combo1_Item_All>Все</Combo1_Item_All>
+	<Combo2_Item_SortByDescending>По убыванию</Combo2_Item_SortByDescending>
+	<Combo2_Item_SortByAscending>По возрастанию</Combo2_Item_SortByAscending>
+	<Label_HasRecipe>Есть рецепт</Label_HasRecipe>
+	<Label_FilterByParam>Отбор по параметру</Label_FilterByParam>
+	<Label_SortOrder>Сортировка по</Label_SortOrder>
+	<Label_Depth>Количество на слой</Label_Depth>
+	<Button_ApplyFilter>Отфильтровать и добавить в корзину</Button_ApplyFilter>
+	
+	
+</GUI>
+
+<Columns>
+
+	<Label>Имя</Label>
+	<ItemsOnMap>На карте</ItemsOnMap>
+	
+	<Material_StuffPower_Armor_Sharp>Броня: Проникновение</Material_StuffPower_Armor_Sharp>
+	<Material_StuffPower_Armor_Blunt>Броня: Удар</Material_StuffPower_Armor_Blunt>
+	<Material_StuffPower_Armor_Heat>Броня: Нагрев</Material_StuffPower_Armor_Heat>
+	<Material_StuffPower_Insulation_Cold>Изоляция: Холод</Material_StuffPower_Insulation_Cold>
+	<Material_StuffPower_Insulation_Heat>Изоляция: Тепло</Material_StuffPower_Insulation_Heat>
+	<Material_SharpDamageMultiplier>Проникающий урон</Material_SharpDamageMultiplier>
+	<Material_BluntDamageMultiplier>Дробящий урон</Material_BluntDamageMultiplier>
+	<Material_MeleeWeapon_CooldownMultiplier>Время между ударами</Material_MeleeWeapon_CooldownMultiplier>
+	<Material_HitPoints>Прочность</Material_HitPoints>
+	<Material_ConstructionSpeedFactor>Скорость строительства</Material_ConstructionSpeedFactor>
+	<Material_DoorOpenSpeed>Скорость открытия двери</Material_DoorOpenSpeed>
+	<Material_DeteriorationRate>Скорость ветшания</Material_DeteriorationRate>
+	<Material_Beauty>Привлекательность</Material_Beauty>
+	<Material_Flammability>Воспламеняемость</Material_Flammability>
+	<Material_Mass>Масса</Material_Mass>
+	<Material_MaxHitPoints>ХП</Material_MaxHitPoints>
+	<Material_WorkToMake>Объём работ</Material_WorkToMake>
+	<Material_MarketValue>Цена</Material_MarketValue>
+	<Material_ImmunityGainSpeedFactor>Фактор скорости иммунизации</Material_ImmunityGainSpeedFactor>
+	<Material_BedRestEffectiveness>Эффективность отдыха</Material_BedRestEffectiveness>
+	<Material_WorkTableWorkSpeedFactor>Фактор скорости работы</Material_WorkTableWorkSpeedFactor>
+	<Material_ResearchSpeedFactor>Фактор скорости исследования</Material_ResearchSpeedFactor>
+	<Material_CE_MeleePenetrationFactor>CE: Фактор пробития брони</Material_CE_MeleePenetrationFactor>
+	
+	<BuildingsFromMaterial_Material>Материал</BuildingsFromMaterial_Material>
+	<BuildingsFromMaterial_ImmunityGainSpeedFactor>Фактор скорости иммунизации</BuildingsFromMaterial_ImmunityGainSpeedFactor>
+	<BuildingsFromMaterial_BedRestEffectiveness>Эффективность отдыха</BuildingsFromMaterial_BedRestEffectiveness>
+	<BuildingsFromMaterial_WorkTableWorkSpeedFactor>Фактор скорости работы</BuildingsFromMaterial_WorkTableWorkSpeedFactor>
+	<BuildingsFromMaterial_ResearchSpeedFactor>Фактор скорости исследования</BuildingsFromMaterial_ResearchSpeedFactor>
+	<BuildingsFromMaterial_MaxHitPoints>Максимальная прочность</BuildingsFromMaterial_MaxHitPoints>
+	<BuildingsFromMaterial_MarketValue>Рыночная стоимость</BuildingsFromMaterial_MarketValue>
+
+	<Animal_ArmorRating_Sharp>Броня: Проникновение</Animal_ArmorRating_Sharp>
+	<Animal_ArmorRating_Blunt>Броня: Удар</Animal_ArmorRating_Blunt>
+	<Animal_ArmorRating_Heat>Броня: Нагрев</Animal_ArmorRating_Heat>
+	<Animal_Mass>Масса</Animal_Mass>
+	<Animal_MarketValue>Рыночная стоимость</Animal_MarketValue>
+	<Animal_MeleeDPS_>Урон/сек в ближнем бою</Animal_MeleeDPS_>
+	<Animal_MeleeArmorPenetration>Бронепробитие врукопашную</Animal_MeleeArmorPenetration>
+	<Animal_MoveSpeed>Скорость передвижения</Animal_MoveSpeed>
+	<Animal_EatingSpeed>Скорость поглощения пищи</Animal_EatingSpeed>
+	<Animal_ComfyTemperatureMin>Мин. комфортная температура</Animal_ComfyTemperatureMin>
+	<Animal_ComfyTemperatureMax>Макс. комфортная температура</Animal_ComfyTemperatureMax>
+	<Animal_ImmunityGainSpeed>Скорость иммунизации</Animal_ImmunityGainSpeed>
+	<Animal_CarryingCapacity>Грузоподъёмность</Animal_CarryingCapacity>
+	<Animal_MeatAmount>Количество мяса</Animal_MeatAmount>
+	<Animal_LeatherAmount>Количество кожи</Animal_LeatherAmount>
+	<Animal_MinimumHandlingSkill>Мин. навык Животноводства</Animal_MinimumHandlingSkill>
+	<Animal_MilkDef>MilkDef - Продукт</Animal_MilkDef>
+	<Animal_MilkIntervalDays>MilkDef - Дней</Animal_MilkIntervalDays>
+	<Animal_MilkAmount>MilkDef - Количество</Animal_MilkAmount>
+	<Animal_WoolDef>WoolDef - Продукт</Animal_WoolDef>
+	<Animal_ShearIntervalDays>WoolDef - Дней</Animal_ShearIntervalDays>
+	<Animal_WoolAmount>WoolDef - Количество</Animal_WoolAmount>
+	<Animal_ManhunterOnTameFailChance>Шанс напад. при неуд. приручении</Animal_ManhunterOnTameFailChance>
+	<Animal_Wildness>Дикость</Animal_Wildness>
+	<Animal_Petness>petness</Animal_Petness>
+	<Animal_Predator>Хищник</Animal_Predator>
+	<Animal_PackAnimal>Для каравана</Animal_PackAnimal>
+	<Animal_HerdAnimal>Стадное животное</Animal_HerdAnimal>
+	<Animal_Trainability>Способность к обучению</Animal_Trainability>
+	<Animal_Train1>Послушание</Animal_Train1>
+	<Animal_Train2>Спустить с поводка</Animal_Train2>
+	<Animal_Train3>Спасение</Animal_Train3>
+	<Animal_Train4>Переноска</Animal_Train4>
+	
+	<Debuff_Material>Материал</Debuff_Material>
+	<Debuff_ImmunityGainSpeedFactor>Фактор скорости иммунизации</Debuff_ImmunityGainSpeedFactor>
+	<Debuff_BedRestEffectiveness>Эффективность отдыха</Debuff_BedRestEffectiveness>
+	<Debuff_WorkTableWorkSpeedFactor>Фактор скорости работы</Debuff_WorkTableWorkSpeedFactor>
+	<Debuff_ResearchSpeedFactor>Фактор скорости исследования</Debuff_ResearchSpeedFactor>
+	<Debuff_MaxHitPoints>Максимальная прочность</Debuff_MaxHitPoints>
+	<Debuff_MarketValue>Рыночная стоимость</Debuff_MarketValue>
+	<Debuff_StackLimit>Макс.кол-во</Debuff_StackLimit>
+	<Debuff_DurationDays>Длительность дней</Debuff_DurationDays>
+	<Debuff_StackedEffectMultiplier>Множитель</Debuff_StackedEffectMultiplier>
+	<Debuff_X1>x1</Debuff_X1>
+	<Debuff_X2>x2</Debuff_X2>
+	<Debuff_X3>x3</Debuff_X3>
+	<Debuff_X4>x4</Debuff_X4>
+	<Debuff_X5>x5</Debuff_X5>
+	<Debuff_XMore>...</Debuff_XMore>
+	
+	<Drug_DrugName>Вещество</Drug_DrugName>
+	<Drug_Addictiveness>Привыкание(%)</Drug_Addictiveness>
+	<Drug_MinToleranceToAddict>Мин.Толерантность для привыкания</Drug_MinToleranceToAddict>
+	<Drug_BaseSeverity>Доза</Drug_BaseSeverity>
+	<Drug_SeverityPerDay>Доза в день(спад)</Drug_SeverityPerDay>
+	<Drug_SeverityDays>Эффект дней</Drug_SeverityDays>
+	<Drug_BaseMoodEffect>Настроение</Drug_BaseMoodEffect>
+	<Drug_PainFactor>Боль</Drug_PainFactor>
+	<Drug_Consciousness>Сознание</Drug_Consciousness>
+	<Drug_Moving>Движение</Drug_Moving>
+	<Drug_Manipulation>Работа</Drug_Manipulation>
+	<Drug_Talking>Речь</Drug_Talking>
+	<Drug_Eating>Питание</Drug_Eating>
+	<Drug_Sight>Зрение</Drug_Sight>
+	<Drug_Hearing>Слух</Drug_Hearing>
+	<Drug_Breathing>Дыхание</Drug_Breathing>
+	<Drug_BloodFiltration>Фильтрация крови</Drug_BloodFiltration>
+	<Drug_BloodPumping>Кровообращение</Drug_BloodPumping>
+	<Drug_Metabolism>Метаболизм</Drug_Metabolism>
+	
+	<WeaponRanged_CanCraft>С рецептом</WeaponRanged_CanCraft>
+	<WeaponRanged_DPS>DPS</WeaponRanged_DPS>
+	<WeaponRanged_Rpm>RPM</WeaponRanged_Rpm>
+	<WeaponRanged_Damage>Урон</WeaponRanged_Damage>
+	<WeaponRanged_BurstShotCount>Очередь</WeaponRanged_BurstShotCount>
+	<WeaponRanged_Range>Дальность</WeaponRanged_Range>
+	<WeaponRanged_Cooldown>Cooldown</WeaponRanged_Cooldown>
+	<WeaponRanged_WarmupTime>WarmupTime</WeaponRanged_WarmupTime>
+	<WeaponRanged_MarketValue>Цена</WeaponRanged_MarketValue>
+	<WeaponRanged_Accuracy>Аккуратность</WeaponRanged_Accuracy>
+	<WeaponRanged_DamageType>Тип урона</WeaponRanged_DamageType>
+	<WeaponRanged_TechLevel>Техн. уровень</WeaponRanged_TechLevel>
+	<WeaponRanged_CE_OneHanded>CE: Одноручное</WeaponRanged_CE_OneHanded>
+	<WeaponRanged_CE_SightsEfficiency>CE: Эфф. прицеливания</WeaponRanged_CE_SightsEfficiency>
+	<WeaponRanged_CE_ShotSpread>CE: Разброс</WeaponRanged_CE_ShotSpread>
+	<WeaponRanged_CE_SwayFactor>CE: Раскачивание</WeaponRanged_CE_SwayFactor>
+	<WeaponRanged_WeaponTags>Тэги</WeaponRanged_WeaponTags>
+	
+	<WeaponMelee_CanCraft>С рецептом</WeaponMelee_CanCraft>
+	<WeaponMelee_DPS>DPS</WeaponMelee_DPS>
+	<WeaponMelee_Damage>Урон</WeaponMelee_Damage>
+	<WeaponMelee_Cooldown>Cooldown</WeaponMelee_Cooldown>
+	<WeaponMelee_MarketValue>Цена</WeaponMelee_MarketValue>
+	<WeaponMelee_MeleeCritChance>Шанс критического удара</WeaponMelee_MeleeCritChance>
+	<WeaponMelee_MeleeDodgeChance>Шанс уворота в рукопашной</WeaponMelee_MeleeDodgeChance>
+	<WeaponMelee_MeleeParryChance>Шанс парировать в ближнем бою</WeaponMelee_MeleeParryChance>
+	<WeaponMelee_TechLevel>Техн. уровень</WeaponMelee_TechLevel>
+	<WeaponMelee_CE_OneHanded>CE: Одноручное</WeaponMelee_CE_OneHanded>
+	<WeaponMelee_CE_MeleeCounterParryBonus>CE: Бонус к игнорированию парирования</WeaponMelee_CE_MeleeCounterParryBonus>
+	<WeaponMelee_WeaponTags>Тэги</WeaponMelee_WeaponTags>
+	
+	<Apparel_CanCraft>С рецептом</Apparel_CanCraft>
+	<Apparel_Material>Материал</Apparel_Material>
+	<Apparel_DefMaterial>Стандартный Материал</Apparel_DefMaterial>
+	<Apparel_Body>Тело</Apparel_Body>
+	<Apparel_Layer>Слой</Apparel_Layer>
+	<Apparel_ArmorBlunt>Броня: Удар</Apparel_ArmorBlunt>
+	<Apparel_ArmorSharp>Броня: Проникновение</Apparel_ArmorSharp>
+	<Apparel_ArmorHeat>Броня: Нагрев</Apparel_ArmorHeat>
+	<Apparel_InsulationCold>Изоляция: Холод</Apparel_InsulationCold>
+	<Apparel_InsulationHeat>Изоляция: Тепло</Apparel_InsulationHeat>
+	<Apparel_MarketValue>Цена</Apparel_MarketValue>
+	<Apparel_MoveSpeed>скорость передвижения</Apparel_MoveSpeed>
+	<Apparel_Suppressability>вероятность подавления</Apparel_Suppressability>
+	<Apparel_WorkSpeedGlobal>общая скорость работы</Apparel_WorkSpeedGlobal>
+	<Apparel_SocialImpact>социальное влияние</Apparel_SocialImpact>
+	<Apparel_PsychicSensitivity>психочувствительность</Apparel_PsychicSensitivity>
+	<Apparel_NegotiationAbility>способность к переговорам</Apparel_NegotiationAbility>
+	<Apparel_TradePriceImprovement>улучшение торговой цены</Apparel_TradePriceImprovement>
+	<Apparel_MentalBreakThreshold>порог нервного срыва</Apparel_MentalBreakThreshold>
+	<Apparel_ShootingAccuracyPawn>точность стрельбы</Apparel_ShootingAccuracyPawn>
+	<Apparel_AimingDelayFactor>время прицеливания</Apparel_AimingDelayFactor>
+	<Apparel_MeleeHitChance>шанс удара врукопашную</Apparel_MeleeHitChance>
+	<Apparel_GlobalLearningFactor>общий фактор обучения</Apparel_GlobalLearningFactor>
+	<Apparel_MedicalOperationSpeed>скорость проведения операций</Apparel_MedicalOperationSpeed>
+	<Apparel_MedicalTendSpeed>скорость лечения</Apparel_MedicalTendSpeed>
+	<Apparel_MedicalTendQuality>качество лечения</Apparel_MedicalTendQuality>
+	<Apparel_MedicalSurgerySuccessChance>шанс успеха операции</Apparel_MedicalSurgerySuccessChance>
+	<Apparel_CarryBulk>вмещаемый объём</Apparel_CarryBulk>
+	<Apparel_MeleeWeapon_CooldownMultiplier>время между ударами</Apparel_MeleeWeapon_CooldownMultiplier>
+	<Apparel_CookSpeed>скорость приготовления пищи</Apparel_CookSpeed>
+	<Apparel_FoodPoisonChance>шанс отравления пищи</Apparel_FoodPoisonChance>
+	<Apparel_DrugCookingSpeed>скорость готовки наркотиков</Apparel_DrugCookingSpeed>
+	<Apparel_ButcheryFleshSpeed>скорость разделки</Apparel_ButcheryFleshSpeed>
+	<Apparel_TrainAnimalChance>шанс обучения животных</Apparel_TrainAnimalChance>
+	<Apparel_TameAnimalChance>шанс приручения животных</Apparel_TameAnimalChance>
+	<Apparel_CarryWeight>переносимый вес</Apparel_CarryWeight>
+	<Apparel_ImmunityGainSpeed>скорость выработки иммунитета</Apparel_ImmunityGainSpeed>
+	<Apparel_ConstructionSpeed>скорость строительства</Apparel_ConstructionSpeed>
+	<Apparel_SmeltingSpeed>скорость переплавки</Apparel_SmeltingSpeed>
+	<Apparel_PlantWorkSpeed>скорость работы с растениями</Apparel_PlantWorkSpeed>
+	<Apparel_MiningSpeed>скорость горных работ</Apparel_MiningSpeed>
+	<Apparel_StonecuttingSpeed>скорость обработки камней</Apparel_StonecuttingSpeed>
+	<Apparel_ReloadSpeed>скорость перезарядки</Apparel_ReloadSpeed>
+	<Apparel_FixBrokenDownBuildingSuccessChance>шанс успешного ремонта</Apparel_FixBrokenDownBuildingSuccessChance>
+	<Apparel_SmithingSpeed>скорость ковки</Apparel_SmithingSpeed>
+	<Apparel_SmoothingSpeed>скорость выравнивания</Apparel_SmoothingSpeed>
+	<Apparel_SculptingSpeed>скорость ваяния</Apparel_SculptingSpeed>
+	<Apparel_TailoringSpeed>скорость шитья</Apparel_TailoringSpeed>
+	<Apparel_ButcheryFleshEfficiency>эффективность разделки</Apparel_ButcheryFleshEfficiency>
+	<Apparel_AimingAccuracy>точность прицеливания</Apparel_AimingAccuracy>
+	<Apparel_MeleeCritChance>шанс критического удара</Apparel_MeleeCritChance>
+	<Apparel_MeleeParryChance>шанс парировать в ближнем бою</Apparel_MeleeParryChance>
+	<Apparel_ArmorRating_Toxin>защита - токсин</Apparel_ArmorRating_Toxin>
+	
+	<BodyPart_Efficiency>Эффективность</BodyPart_Efficiency>
+	<BodyPart_Sight>Зрение</BodyPart_Sight>
+	<BodyPart_Talking>Речь</BodyPart_Talking>
+	<BodyPart_Eating>Питание</BodyPart_Eating>
+	<BodyPart_Hearing>Слух</BodyPart_Hearing>
+	<BodyPart_Manipulation>Работа</BodyPart_Manipulation>
+	<BodyPart_Moving>Движение</BodyPart_Moving>
+	<BodyPart_Breathing>Дыхание</BodyPart_Breathing>
+	<BodyPart_BloodFiltration>Фильтрация крови</BodyPart_BloodFiltration>
+	<BodyPart_BloodPumping>Кровообращение</BodyPart_BloodPumping>
+	<BodyPart_Metabolism>Метаболизм</BodyPart_Metabolism>
+	<BodyPart_Consciousness>Сознание</BodyPart_Consciousness>
+	
+	<Facility_Max>Максимум на постройку</Facility_Max>
+	<Facility_Comfort>Комфорт</Facility_Comfort>
+	<Facility_BedRestEffectiveness>Эффективность отдыха</Facility_BedRestEffectiveness>
+	<Facility_MedicalTendQualityOffset>Прирост качества лечения</Facility_MedicalTendQualityOffset>
+	<Facility_MedicalTendQuality>Качество лечения</Facility_MedicalTendQuality>
+	<Facility_ImmunityGainSpeedFactor>Скорость выработки иммунитета</Facility_ImmunityGainSpeedFactor>
+	<Facility_MedicalOperationSpeed>Скорость проведения медпроцедур</Facility_MedicalOperationSpeed>
+	<Facility_MedicalSurgerySuccessChance>Шанс успеха операции</Facility_MedicalSurgerySuccessChance>
+	<Facility_MedicalTendSpeed>Скорость лечения</Facility_MedicalTendSpeed>
+	<Facility_WorkTableWorkSpeedFactor>Скорость работы</Facility_WorkTableWorkSpeedFactor>
+	<Facility_Beauty>Привлекательность</Facility_Beauty>
+	<Facility_ResearchSpeedFactor>Скорость исследования</Facility_ResearchSpeedFactor>
+	<Facility_LearningSpeedFactor>Фактор скорости обучения</Facility_LearningSpeedFactor>
+	
+	<CEAmmo_DamageType>Тип</CEAmmo_DamageType>
+	<CEAmmo_Damage>Урон</CEAmmo_Damage>
+	<CEAmmo_ArmorPenetration>Бронепробитие(Old)</CEAmmo_ArmorPenetration>
+	<CEAmmo_ArmorPenetrationSharp>Бронепробитие: Проникновение</CEAmmo_ArmorPenetrationSharp>
+	<CEAmmo_ArmorPenetrationBlunt>Бронепробитие: Удар</CEAmmo_ArmorPenetrationBlunt>
+	<CEAmmo_Speed>Скорость</CEAmmo_Speed>
+	<CEAmmo_DamageType2>Тип2</CEAmmo_DamageType2>
+	<CEAmmo_Damage2>Урон2</CEAmmo_Damage2>
+	
+	<!--SurvivalTools:-->
+	<Tool_TreeFellingSpeed>Скорость рубки деревьев</Tool_TreeFellingSpeed>
+	<Tool_DiggingSpeed>Скорость копания</Tool_DiggingSpeed>
+	<Tool_MiningYieldDigging>Добыча полезных ископаемых</Tool_MiningYieldDigging>
+	<Tool_ConstructionSpeed>Скорость строительства</Tool_ConstructionSpeed>
+	<Tool_SmithingSpeed>Скорость ковки</Tool_SmithingSpeed>
+	<Tool_PlantHarvestingSpeed>Скорость сбора растений</Tool_PlantHarvestingSpeed>
+	<Tool_PlantSowingSpeed>Скорость посадки растений</Tool_PlantSowingSpeed>
+	<!--RightToolForJob:-->
+	<Tool_CleaningSpeed>Скорость уборки</Tool_CleaningSpeed>
+	<Tool_Suppressability>Вероятность подавления</Tool_Suppressability>
+	<Tool_MedicalOperationSpeed>Скорость проведения медпроцедур</Tool_MedicalOperationSpeed>
+	<Tool_MedicalSurgerySuccessChance>Шанс успеха операции</Tool_MedicalSurgerySuccessChance>
+	<Tool_MeleeCritChance>Шанс критического удара</Tool_MeleeCritChance>
+	<Tool_MeleeDodgeChance>Шанс уворота в рукопашной</Tool_MeleeDodgeChance>
+	<Tool_MeleeParryChance>Шанс парировать в ближнем бою</Tool_MeleeParryChance>
+	<Tool_PlantWorkSpeed>Скорость работы с растениями</Tool_PlantWorkSpeed>
+	<Tool_CookSpeed>Скорость приготовления пищи</Tool_CookSpeed>
+	<Tool_ButcheryFleshSpeed>Скорость разделки</Tool_ButcheryFleshSpeed>
+
+
+</Columns>
+
+</LocalizeData>

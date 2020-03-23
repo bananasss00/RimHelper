@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3FDCE7B1-44A5-4242-AA3E-94E5271F9220}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RimHelper</RootNamespace>
+    <AssemblyName>RimHelper</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BindingListView">
+      <HintPath>..\packages\BindingListView.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\packages\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Cecil">
+      <HintPath>..\packages\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApparelFilterMaterials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApparelFilterMaterials.Designer.cs">
+      <DependentUpon>ApparelFilterMaterials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ApparelFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApparelFilterForm.Designer.cs">
+      <DependentUpon>ApparelFilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColumnFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColumnFilter.Designer.cs">
+      <DependentUpon>ColumnFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HarmonyBrowserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HarmonyBrowserForm.Designer.cs">
+      <DependentUpon>HarmonyBrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HarmonyBrowserResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HarmonyBrowserResults.Designer.cs">
+      <DependentUpon>HarmonyBrowserResults.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InjectDllForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InjectDllForm.Designer.cs">
+      <DependentUpon>InjectDllForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TabApparel.cs" />
+    <Compile Include="TabControl.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ApparelFilterMaterials.resx">
+      <DependentUpon>ApparelFilterMaterials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ApparelFilterForm.resx">
+      <DependentUpon>ApparelFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColumnFilter.resx">
+      <DependentUpon>ColumnFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HarmonyBrowserForm.resx">
+      <DependentUpon>HarmonyBrowserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HarmonyBrowserResults.resx">
+      <DependentUpon>HarmonyBrowserResults.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InjectDllForm.resx">
+      <DependentUpon>InjectDllForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IPCInterface\IPCInterface.csproj">
+      <Project>{7e24fc2c-90a3-47cb-8689-9fedb15e4356}</Project>
+      <Name>IPCInterface</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
