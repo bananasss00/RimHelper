@@ -98,7 +98,7 @@ namespace RimHelperProxyMod.Functions
                 else row.DamageType = verb.defaultProjectile.projectile.damageDef.label;
 
                 if (d.weaponTags != null)
-                    row.WeaponTags = string.Join("; ", d.weaponTags.ToArray());
+                    row.WeaponTags = string.Join("; ", d.weaponTags.OrderBy(x => x).ToArray());
             }
             catch (Exception e)
             {

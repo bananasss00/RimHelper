@@ -40,7 +40,7 @@ namespace RimHelperProxyMod.Functions
             var rows = new List<WeaponMelee>();
 
             var dataSources = from d in DefDatabase<ThingDef>.AllDefs
-                where d.IsWeapon && d.IsMeleeWeapon && d.tradeability.TraderCanSell()
+                where d.IsWeapon && d.IsMeleeWeapon/* && d.tradeability.TraderCanSell()*/
                 orderby d.BaseMarketValue
                 select d;
 
@@ -120,7 +120,7 @@ namespace RimHelperProxyMod.Functions
                 }
 
                 if (d.weaponTags != null)
-                    row.WeaponTags = string.Join("; ", d.weaponTags.ToArray());
+                    row.WeaponTags = string.Join("; ", d.weaponTags.OrderBy(x => x).ToArray());
             }
             catch (Exception e)
             {
