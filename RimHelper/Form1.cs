@@ -130,6 +130,21 @@ namespace RimHelper
                     IPC.StateCallback(State.GetFacilities, () => IPC.GetObjectBuf<List<Facility>>()),
                 dgv, comboBox1, textBox4, pictureBox1));
 
+            // Plants
+            tabs.Add(new RimHelper.TabControl<Plant>("Tab_Plant".Translate(), () =>
+                    IPC.StateCallback(State.GetPlants, () => IPC.GetObjectBuf<List<Plant>>()),
+                dgv, comboBox1, textBox4, pictureBox1));
+
+            // Backstorys
+            tabs.Add(new RimHelper.TabControl<Backstory>("Tab_Backstorys".Translate(), () =>
+                    IPC.StateCallback(State.GetBackstorys, () => IPC.GetObjectBuf<List<Backstory>>()),
+                dgv, comboBox1, textBox4, pictureBox1));
+
+            // Traits
+            tabs.Add(new RimHelper.TabControl<Trait>("Tab_Traits".Translate(), () =>
+                    IPC.StateCallback(State.GetTraits, () => IPC.GetObjectBuf<List<Trait>>()),
+                dgv, comboBox1, textBox4, pictureBox1));
+
             // CEAmmos
             tabs.Add(new RimHelper.TabControl<CEAmmo>("Tab_CEAmmos".Translate(), () =>
                     IPC.StateCallback(State.GetCEAmmos, () => IPC.GetObjectBuf<List<CEAmmo>>()),

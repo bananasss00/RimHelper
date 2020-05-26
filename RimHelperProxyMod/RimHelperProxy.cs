@@ -81,6 +81,15 @@ namespace RimHelperProxyMod
                         case State.GetFacilities:
                             IPC.SetObjectBuf(Facilities.Get());
                             break;
+                        case State.GetPlants:
+                            IPC.SetObjectBuf(Plants.Get());
+                            break;
+                        case State.GetBackstorys:
+                            IPC.SetObjectBuf(Backstorys.Get());
+                            break;
+                        case State.GetTraits:
+                            IPC.SetObjectBuf(Traits.Get());
+                            break;
                         case State.GetCEAmmos:
                             IPC.SetObjectBuf(CEAmmos.Get());
                             break;

@@ -20,7 +20,7 @@ namespace RimHelperProxyMod.Functions
             var rows = new List<BodyPart>();
 
             var dataSources = from d in DefDatabase<HediffDef>.AllDefs
-                where d.addedPartProps != null
+                where d.addedPartProps != null || d.spawnThingOnRemoved != null
                 select d;
 
             foreach (var d in dataSources)
@@ -36,7 +36,7 @@ namespace RimHelperProxyMod.Functions
         {
             var row = new BodyPart { Label = d.LabelCap, Description = d.description };
 
-            row.Efficiency = d.addedPartProps.partEfficiency.ToPercent();
+            row.Efficiency = d.addedPartProps?.partEfficiency.ToPercent();
 
             if (d.stages != null)
             {

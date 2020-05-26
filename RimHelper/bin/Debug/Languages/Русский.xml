@@ -28,6 +28,9 @@
 	<Tab_Drugs>Вещества</Tab_Drugs>
 	<Tab_BodyParts>Протезы</Tab_BodyParts>
 	<Tab_Facilities>Апгрейды построек</Tab_Facilities>
+	<Tab_Plant>Растения</Tab_Plant>
+	<Tab_Backstorys>Предыстории</Tab_Backstorys>
+	<Tab_Traits>Черты характера</Tab_Traits>
 	<Tab_CEAmmos>CE: Патроны</Tab_CEAmmos>
 	<Tab_Tools>HSK: Инструменты</Tab_Tools>
 
@@ -300,8 +303,137 @@
 	<Tool_PlantWorkSpeed>Скорость работы с растениями</Tool_PlantWorkSpeed>
 	<Tool_CookSpeed>Скорость приготовления пищи</Tool_CookSpeed>
 	<Tool_ButcheryFleshSpeed>Скорость разделки</Tool_ButcheryFleshSpeed>
+	
+	<!--Plant:-->
+	<Plant_NutritionPer10Days>Питательность урожая за 10 дней(Почва 180%)</Plant_NutritionPer10Days>
+	<Plant_MarketValuePer10Days>Ценность урожая за 10 дней(Почва 180%)</Plant_MarketValuePer10Days>
+	<Plant_GrowDays>Время созревания(дн.)</Plant_GrowDays>
+	<Plant_GrowMinGlow>Требование к свету</Plant_GrowMinGlow>
+	<Plant_FertilityMin>Мин. плодородность почвы</Plant_FertilityMin>
+	<Plant_FertilitySensitivity>Влияние плодородности</Plant_FertilitySensitivity>
+	<Plant_HarvestYield>Урожайность сбора</Plant_HarvestYield>
+	<Plant_LifespanDays>Продолжительность жизни</Plant_LifespanDays>
+	<Plant_Sowable>Можно сеять</Plant_Sowable>
+	<Plant_SowMinSkill>Требуемый навык</Plant_SowMinSkill>
+	<Plant_HarvestedThingDef>Урожай</Plant_HarvestedThingDef>
+	<Plant_ProductNutrition>Урожай: Питательность</Plant_ProductNutrition>
+	<Plant_ProductPreferability>Урожай: Тип</Plant_ProductPreferability>
+	<Plant_ProductDaysToRotStart>Урожай: Время хранения(дн.)</Plant_ProductDaysToRotStart>
+	<Plant_ProductMarketValue>Урожай: Ценность</Plant_ProductMarketValue>
+	
+	<!--Backstory:-->
+	<Backstory_BackstorySlot>Слот</Backstory_BackstorySlot>
+	<Backstory_Intellectual>Умственный труд</Backstory_Intellectual>
+	<Backstory_Shooting>Дальний бой</Backstory_Shooting>
+	<Backstory_Melee>Ближний бой</Backstory_Melee>
+	<Backstory_Social>Общение</Backstory_Social>
+	<Backstory_Artistic>Искусство</Backstory_Artistic>
+	<Backstory_Crafting>Ремесло</Backstory_Crafting>
+	<Backstory_Medicine>Медицина</Backstory_Medicine>
+	<Backstory_Construction>Строительство</Backstory_Construction>
+	<Backstory_Mining>Горное дело</Backstory_Mining>
+	<Backstory_Animals>Животноводство</Backstory_Animals>
+	<Backstory_Plants>Растениеводство</Backstory_Plants>
+	<Backstory_Cooking>Кулинария</Backstory_Cooking>
+	<Backstory_spawnCategories>spawnCategories</Backstory_spawnCategories>
+	<Backstory_DisabledWorkGivers>DisabledWorkGivers</Backstory_DisabledWorkGivers>
+	<Backstory_DisabledWorkTypes>DisabledWorkTypes</Backstory_DisabledWorkTypes>
+	<Backstory_disallowedTraits>disallowedTraits</Backstory_disallowedTraits>
+	<Backstory_forcedTraits>forcedTraits</Backstory_forcedTraits>
+	<Backstory_workDisables>workDisables</Backstory_workDisables>
 
-
+	<!--Traits:-->
+	<Trait_defName>defName</Trait_defName>
+	<Trait_conflictingTraits>Конфликтует с</Trait_conflictingTraits>
+	<Trait_Melee>Ближний бой</Trait_Melee>
+	<Trait_Shooting>Дальний бой</Trait_Shooting>
+	<Trait_Cooking>Кулинария</Trait_Cooking>
+	<Trait_Medicine>Медицина</Trait_Medicine>
+	<Trait_Intellectual>Умственный труд</Trait_Intellectual>
+	<Trait_Artistic>Искусство</Trait_Artistic>
+	<Trait_Construction>Строительство</Trait_Construction>
+	<Trait_Social>Общение</Trait_Social>
+	<Trait_Animals>Животноводство</Trait_Animals>
+	<Trait_Plants>Растениеводство</Trait_Plants>
+	<Trait_Crafting>Ремесло</Trait_Crafting>
+	<Trait_Mining>Горное дело</Trait_Mining>
+	<Trait_Vulnerability>Уязвимость</Trait_Vulnerability>
+	<Trait_GlobalLearningFactor>Эффективность обучения</Trait_GlobalLearningFactor>
+	<Trait_MentalBreakThreshold>Порог нервного срыва</Trait_MentalBreakThreshold>
+	<Trait_MeleeHitChance>Шанс удара врукопашную</Trait_MeleeHitChance>
+	<Trait_MeleeCritChance>Шанс критического удара</Trait_MeleeCritChance>
+	<Trait_MeleeParryChance>Шанс парировать в ближнем бою</Trait_MeleeParryChance>
+	<Trait_SexFrequency>Сексуальное влечение</Trait_SexFrequency>
+	<Trait_PainShockThreshold>Порог переносимости боли</Trait_PainShockThreshold>
+	<Trait_MeleeDodgeChance>Шанс уворота в рукопашной</Trait_MeleeDodgeChance>
+	<Trait_SexAbility>Сексуальные навыки</Trait_SexAbility>
+	<Trait_HungerRateMultiplier>Множитель голода</Trait_HungerRateMultiplier>
+	<Trait_RestRateMultiplier>Эффективность сна</Trait_RestRateMultiplier>
+	<Trait_MoveSpeed>Скорость передвижения</Trait_MoveSpeed>
+	<Trait_WorkSpeedGlobal>Общая скорость работы</Trait_WorkSpeedGlobal>
+	<Trait_ImmunityGainSpeed>Скорость выработки иммунитета</Trait_ImmunityGainSpeed>
+	<Trait_Suppressability>Вероятность подавления</Trait_Suppressability>
+	<Trait_AimingDelayFactor>Время прицеливания</Trait_AimingDelayFactor>
+	<Trait_ShootingAccuracyPawn>Точность стрельбы</Trait_ShootingAccuracyPawn>
+	<Trait_ResearchSpeed>Скорость исследования</Trait_ResearchSpeed>
+	<Trait_ConstructionSpeed>Скорость строительства</Trait_ConstructionSpeed>
+	<Trait_ConstructSuccessChance>Шанс успешного строительства</Trait_ConstructSuccessChance>
+	<Trait_SculptingSpeed>Скорость ваяния</Trait_SculptingSpeed>
+	<Trait_PsychicSensitivity>Психочувствительность</Trait_PsychicSensitivity>
+	<Trait_NegotiationAbility>Способность к переговорам</Trait_NegotiationAbility>
+	<Trait_SocialImpact>Социальное влияние</Trait_SocialImpact>
+	<Trait_AnimalGatherSpeed>Скорость работы с животными</Trait_AnimalGatherSpeed>
+	<Trait_AnimalGatherYield>Эффект-ть работы с животными</Trait_AnimalGatherYield>
+	<Trait_TameAnimalChance>Шанс приручения животных</Trait_TameAnimalChance>
+	<Trait_TrainAnimalChance>Шанс обучения животных</Trait_TrainAnimalChance>
+	<Trait_PlantHarvestYield>Урожайность сбора</Trait_PlantHarvestYield>
+	<Trait_PlantWorkSpeed>Скорость работы с растениями</Trait_PlantWorkSpeed>
+	<Trait_ButcheryFleshEfficiency>Эффективность разделки</Trait_ButcheryFleshEfficiency>
+	<Trait_ButcheryFleshSpeed>Скорость разделки</Trait_ButcheryFleshSpeed>
+	<Trait_ButcheryMechanoidEfficiency>Эффект-ть разбора механоидов</Trait_ButcheryMechanoidEfficiency>
+	<Trait_ButcheryMechanoidSpeed>Скорость разбора механоидов</Trait_ButcheryMechanoidSpeed>
+	<Trait_DrugCookingSpeed>Скорость готовки наркотиков</Trait_DrugCookingSpeed>
+	<Trait_CookSpeed>Скорость приготовления пищи</Trait_CookSpeed>
+	<Trait_DrugSynthesisSpeed>Скорость синтеза препаратов</Trait_DrugSynthesisSpeed>
+	<Trait_MiningSpeed>Скорость горных работ</Trait_MiningSpeed>
+	<Trait_MiningYield>Эффективность добычи</Trait_MiningYield>
+	<Trait_ComfyTemperatureMax>Макс. комфортная температура</Trait_ComfyTemperatureMax>
+	<Trait_ComfyTemperatureMin>Мин. комфортная температура</Trait_ComfyTemperatureMin>
+	<Trait_FoodPoisonChance>Шанс отравления пищи</Trait_FoodPoisonChance>
+	<Trait_FixBrokenDownBuildingSuccessChance>Шанс успешного ремонта</Trait_FixBrokenDownBuildingSuccessChance>
+	<Trait_MedicalSurgerySuccessChance>Шанс успеха операции</Trait_MedicalSurgerySuccessChance>
+	<Trait_MedicalTendQuality>Качество лечения</Trait_MedicalTendQuality>
+	<Trait_MedicalOperationSpeed>Скорость проведения медпроцедур</Trait_MedicalOperationSpeed>
+	<Trait_MedicalTendSpeed>Скорость лечения</Trait_MedicalTendSpeed>
+	<Trait_EatingSpeed>Скорость поглощения пищи</Trait_EatingSpeed>
+	<Trait_SmithingSpeed>Скорость ковки</Trait_SmithingSpeed>
+	<Trait_TailoringSpeed>Скорость шитья</Trait_TailoringSpeed>
+	<Trait_SmoothingSpeed>Скорость выравнивания</Trait_SmoothingSpeed>
+	<Trait_TradePriceImprovement>Улучшение торговой цены</Trait_TradePriceImprovement>
+	<Trait_ToxicSensitivity>Чувствительность к токсинам</Trait_ToxicSensitivity>
+	<Trait_CarryWeight>Переносимый вес</Trait_CarryWeight>
+	<Trait_HuntingStealth>Скрытность на охоте</Trait_HuntingStealth>
+	<Trait_ElectronicCraftingSpeed>Скорость создания электроники</Trait_ElectronicCraftingSpeed>
+	<Trait_UnskilledLaborSpeed>Скорость простой работы</Trait_UnskilledLaborSpeed>
+	<Trait_CleaningSpeed>Скорость уборки</Trait_CleaningSpeed>
+	<Trait_CollectingSpeed>Скорость сбора</Trait_CollectingSpeed>
+	<Trait_ForagedNutritionPerDay>Количество добываемой еды</Trait_ForagedNutritionPerDay>
+	<Trait_SmeltingSpeed>Скорость переплавки</Trait_SmeltingSpeed>
+	<Trait_TreeFellingSpeed>Скорость рубки деревьев</Trait_TreeFellingSpeed>
+	<Trait_CarryingCapacity>Грузоподъёмность</Trait_CarryingCapacity>
+	<Trait_CarryBulk>Вмещаемый объём</Trait_CarryBulk>
+	<Trait_FishingSpeed>Скорость рыбалки</Trait_FishingSpeed>
+	<Trait_ReloadSpeed>Скорость перезарядки</Trait_ReloadSpeed>
+	<Trait_PlantHarvestingSpeed>Скорость сбора растений</Trait_PlantHarvestingSpeed>
+	<Trait_AimingAccuracy>Точность прицеливания</Trait_AimingAccuracy>
+	<Trait_ConstructionResearchSpeed>Скорость строительных исследований</Trait_ConstructionResearchSpeed>
+	<Trait_CraftingResearchSpeed>Скорость ремесленных исследований</Trait_CraftingResearchSpeed>
+	<Trait_Flammability>Воспламеняемость</Trait_Flammability>
+	<Trait_Radiation>Восприимчивость к радиации</Trait_Radiation>
+	<Trait_disabledWorkTypes>disabledWorkTypes</Trait_disabledWorkTypes>
+	<Trait_disabledWorkTags>disabledWorkTags</Trait_disabledWorkTags>
+	<Trait_requiredWorkTypes>requiredWorkTypes</Trait_requiredWorkTypes>
+	<Trait_requiredWorkTags>requiredWorkTags</Trait_requiredWorkTags>
 </Columns>
 
 </LocalizeData>

@@ -48,6 +48,9 @@
     <Compile Include="IPCInterface.cs" />
     <Compile Include="Localization.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rows\Plant.cs" />
+    <Compile Include="Rows\Trait.cs" />
+    <Compile Include="Rows\Backstory.cs" />
     <Compile Include="Rows\Tool.cs" />
     <Compile Include="Rows\Facility.cs" />
     <Compile Include="Rows\Debuff.cs" />
