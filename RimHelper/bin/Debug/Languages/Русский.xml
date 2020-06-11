@@ -83,6 +83,7 @@
 	<Material_WorkTableWorkSpeedFactor>Фактор скорости работы</Material_WorkTableWorkSpeedFactor>
 	<Material_ResearchSpeedFactor>Фактор скорости исследования</Material_ResearchSpeedFactor>
 	<Material_CE_MeleePenetrationFactor>CE: Фактор пробития брони</Material_CE_MeleePenetrationFactor>
+	<Material_Category>Категория</Material_Category>
 	
 	<BuildingsFromMaterial_Material>Материал</BuildingsFromMaterial_Material>
 	<BuildingsFromMaterial_ImmunityGainSpeedFactor>Фактор скорости иммунизации</BuildingsFromMaterial_ImmunityGainSpeedFactor>
@@ -236,6 +237,7 @@
 	<Apparel_PlantWorkSpeed>скорость работы с растениями</Apparel_PlantWorkSpeed>
 	<Apparel_MiningSpeed>скорость горных работ</Apparel_MiningSpeed>
 	<Apparel_StonecuttingSpeed>скорость обработки камней</Apparel_StonecuttingSpeed>
+	<Apparel_ElectronicCraftingSpeed>Скорость создания электроники</Apparel_ElectronicCraftingSpeed>
 	<Apparel_ReloadSpeed>скорость перезарядки</Apparel_ReloadSpeed>
 	<Apparel_FixBrokenDownBuildingSuccessChance>шанс успешного ремонта</Apparel_FixBrokenDownBuildingSuccessChance>
 	<Apparel_SmithingSpeed>скорость ковки</Apparel_SmithingSpeed>
@@ -246,7 +248,14 @@
 	<Apparel_AimingAccuracy>точность прицеливания</Apparel_AimingAccuracy>
 	<Apparel_MeleeCritChance>шанс критического удара</Apparel_MeleeCritChance>
 	<Apparel_MeleeParryChance>шанс парировать в ближнем бою</Apparel_MeleeParryChance>
+	<Apparel_MeleeDodgeChance>Шанс уворота в рукопашной</Apparel_MeleeDodgeChance>
 	<Apparel_ArmorRating_Toxin>защита - токсин</Apparel_ArmorRating_Toxin>
+	<Apparel_Radiation>Восприимчивость к радиации</Apparel_Radiation>
+	<Apparel_SurvivalToolCarryCapacity>Вместимость инструментов</Apparel_SurvivalToolCarryCapacity>
+	<Apparel_GermResistance>Устойчивость к болезням</Apparel_GermResistance>
+	<Apparel_GermContainment>Стерильность</Apparel_GermContainment>
+	<Apparel_SmokeSensitivity>Чувствительность к дыму</Apparel_SmokeSensitivity>
+
 	
 	<BodyPart_Efficiency>Эффективность</BodyPart_Efficiency>
 	<BodyPart_Sight>Зрение</BodyPart_Sight>
@@ -314,6 +323,7 @@
 	<Plant_HarvestYield>Урожайность сбора</Plant_HarvestYield>
 	<Plant_LifespanDays>Продолжительность жизни</Plant_LifespanDays>
 	<Plant_Sowable>Можно сеять</Plant_Sowable>
+	<Plant_IsTree>Дерево</Plant_IsTree>
 	<Plant_SowMinSkill>Требуемый навык</Plant_SowMinSkill>
 	<Plant_HarvestedThingDef>Урожай</Plant_HarvestedThingDef>
 	<Plant_ProductNutrition>Урожай: Питательность</Plant_ProductNutrition>

@@ -45,6 +45,10 @@ namespace IPCInterface.Rows
         [LocalizedDisplayName("Plant_Sowable")]
         public bool Sowable { get; set; }
 
+        [ColorizeOrder(ColorizeOrderOption.Positive)]
+        [LocalizedDisplayName("Plant_IsTree")]
+        public bool IsTree { get; set; }
+
         [ColorizeOrder(ColorizeOrderOption.Descending)]
         [LocalizedDisplayName("Plant_SowMinSkill")]
         public float? SowMinSkill { get; set; }

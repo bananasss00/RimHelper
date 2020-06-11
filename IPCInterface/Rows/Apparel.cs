@@ -179,6 +179,10 @@ namespace IPCInterface.Rows
         public float? StonecuttingSpeed { get; set; }
 
         [ColorizeOrder(ColorizeOrderOption.Ascending)]
+        [LocalizedDisplayName("Apparel_ElectronicCraftingSpeed")] //Скорость создания электроники
+        public float? ElectronicCraftingSpeed { get; set; }
+
+        [ColorizeOrder(ColorizeOrderOption.Ascending)]
         [LocalizedDisplayName("Apparel_ReloadSpeed")] //скорость перезарядки
         public float? ReloadSpeed { get; set; }
 
@@ -219,9 +223,31 @@ namespace IPCInterface.Rows
         public float? MeleeParryChance { get; set; }
 
         [ColorizeOrder(ColorizeOrderOption.Ascending)]
+        [LocalizedDisplayName("Apparel_MeleeDodgeChance")] //Шанс уворота в рукопашной
+        public float? MeleeDodgeChance { get; set; }
+
+        [ColorizeOrder(ColorizeOrderOption.Ascending)]
         [LocalizedDisplayName("Apparel_ArmorRating_Toxin")] //защита - токсин
         public float? ArmorRating_Toxin { get; set; }
 
+        [ColorizeOrder(ColorizeOrderOption.Ascending)]
+        [LocalizedDisplayName("Apparel_SurvivalToolCarryCapacity")] //Вместимость инструментов
+        public float? SurvivalToolCarryCapacity { get; set; }
 
+        [ColorizeOrder(ColorizeOrderOption.Descending)]
+        [LocalizedDisplayName("Apparel_Radiation")] //Восприимчивость к радиации
+        public float? Radiation { get; set; }
+
+        [ColorizeOrder(ColorizeOrderOption.Ascending)]
+        [LocalizedDisplayName("Apparel_GermResistance")] //Устойчивость к болезням
+        public float? GermResistance { get; set; }
+
+        [ColorizeOrder(ColorizeOrderOption.Ascending)]
+        [LocalizedDisplayName("Apparel_GermContainment")] //Стерильность
+        public float? GermContainment { get; set; }
+
+        [ColorizeOrder(ColorizeOrderOption.Ascending)]
+        [LocalizedDisplayName("Apparel_SmokeSensitivity")] //Чувствительность к дыму
+        public float? SmokeSensitivity { get; set; }
     }
 }

@@ -43,13 +43,14 @@ namespace RimHelperProxyMod.Functions
 
             row.NutritionPer10Days = nutritionPer10Days.Nullify().RoundTo2();
             row.MarketValuePer10Days = marketValuePer10Days.Nullify().RoundTo2();
-            row.GrowDays = d.plant.growDays;
+            row.GrowDays = d.plant.growDays.Nullify().RoundTo2();
             row.GrowMinGlow = d.plant.growMinGlow.Nullify().ToPercent();
             row.FertilityMin = d.plant.fertilityMin.Nullify().ToPercent();
             row.FertilitySensitivity = d.plant.fertilitySensitivity.Nullify().ToPercent();
             row.HarvestYield = d.plant.harvestYield;
-            row.LifespanDays = d.plant.LifespanDays;
+            row.LifespanDays = d.plant.LifespanDays.Nullify().RoundTo2();
             row.Sowable = d.plant.Sowable;
+            row.IsTree = d.plant.IsTree;
             row.SowMinSkill = d.plant.sowMinSkill;
             row.HarvestedThingDef = d.plant.harvestedThingDef?.LabelCap;
             row.ProductNutrition = d.plant.harvestedThingDef?.ingestible?.CachedNutrition;

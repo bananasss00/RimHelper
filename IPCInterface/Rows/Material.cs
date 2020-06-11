@@ -120,5 +120,8 @@ namespace IPCInterface.Rows
         [ColorizeOrder(ColorizeOrderOption.Ascending)]
         [LocalizedDisplayName("Material_CE_MeleePenetrationFactor")]
         public float? CE_MeleePenetrationFactor { get; set; }
+
+        [LocalizedDisplayName("Material_Category")]
+        public string Category { get; set; }
     }
 }

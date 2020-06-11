@@ -93,7 +93,29 @@ namespace RimHelperProxyMod.Functions
                 row.CE_MeleePenetrationFactor = d.GetStatFactorValue(CE_MeleePenetrationFactor);
             }
 
+            row.Category = GetCategory(d);
+
             return row;
+        }
+
+        public static string GetCategory(ThingDef d)
+        {
+            var cats = d.thingCategories;
+            if (cats == null)
+                return null;
+
+            string getCatPath(ThingCategoryDef categoryDef)
+            {
+                var path = categoryDef.Parents
+                    .Where(x => !x.defName.Equals("Root"))
+                    .Select(x => x.LabelCap)
+                    .Reverse()
+                    .ToList();
+                path.Add(categoryDef.LabelCap);
+                return String.Join("/", path.ToArray());
+            }
+
+            return String.Join("; ", cats.Select(getCatPath).OrderBy(x => x).ToArray());
         }
     }
 }
