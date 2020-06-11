@@ -97,5 +97,13 @@ namespace IPCInterface.Rows
         [ColorizeOrder(ColorizeOrderOption.Ascending)]
         [LocalizedDisplayName("Tool_ButcheryFleshSpeed")]
         public float? ButcheryFleshSpeed { get; set; } //Скорость разделки
+
+        [ColorizeOrder(ColorizeOrderOption.Ascending)]
+        [LocalizedDisplayName("Tool_GermContainment")] // Стерильность
+        public float? GermContainment { get; set; }
+
+        [ColorizeOrder(ColorizeOrderOption.Ascending)]
+        [LocalizedDisplayName("Tool_GermResistance")] // Устойчивость к болезням
+        public float? GermResistance { get; set; }
     }
 }

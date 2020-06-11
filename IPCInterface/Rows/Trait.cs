@@ -97,9 +97,17 @@ namespace IPCInterface.Rows
         [LocalizedDisplayName("Trait_PainShockThreshold")] // Порог переносимости боли
         public float? PainShockThreshold { get; set; }
 
+        [ColorizeOrder(ColorizeOrderOption.Descending)]
+        [LocalizedDisplayName("Trait_PawnTrapSpringChance")] // Шанс активации ловушек
+        public float? PawnTrapSpringChance { get; set; }
+
         [ColorizeOrder(ColorizeOrderOption.Ascending)]
         [LocalizedDisplayName("Trait_MeleeDodgeChance")] // Шанс уворота в рукопашной
         public float? MeleeDodgeChance { get; set; }
+
+        [ColorizeOrder(ColorizeOrderOption.Descending)]
+        [LocalizedDisplayName("Trait_IncomingDamageFactor")] // Множитель получаемого урона
+        public float? IncomingDamageFactor { get; set; }
 
         [ColorizeOrder(ColorizeOrderOption.Ascending)]
         [LocalizedDisplayName("Trait_SexAbility")] // Сексуальные навыки
@@ -150,12 +158,20 @@ namespace IPCInterface.Rows
         public float? ConstructSuccessChance { get; set; }
 
         [ColorizeOrder(ColorizeOrderOption.Ascending)]
+        [LocalizedDisplayName("Trait_GeneralLaborSpeed")] // Скорость общей работы
+        public float? GeneralLaborSpeed { get; set; }
+
+        [ColorizeOrder(ColorizeOrderOption.Ascending)]
         [LocalizedDisplayName("Trait_SculptingSpeed")] // Скорость ваяния
         public float? SculptingSpeed { get; set; }
 
         [ColorizeOrder(ColorizeOrderOption.Descending)]
         [LocalizedDisplayName("Trait_PsychicSensitivity")] // Психочувствительность
         public float? PsychicSensitivity { get; set; }
+
+        [ColorizeOrder(ColorizeOrderOption.Ascending)]
+        [LocalizedDisplayName("Trait_PawnBeauty")] // Красота
+        public float? PawnBeauty { get; set; }
 
         [ColorizeOrder(ColorizeOrderOption.Ascending)]
         [LocalizedDisplayName("Trait_NegotiationAbility")] // Способность к переговорам
@@ -256,6 +272,14 @@ namespace IPCInterface.Rows
         [ColorizeOrder(ColorizeOrderOption.Ascending)]
         [LocalizedDisplayName("Trait_MedicalTendSpeed")] // Скорость лечения
         public float? MedicalTendSpeed { get; set; }
+
+        [ColorizeOrder(ColorizeOrderOption.Ascending)]
+        [LocalizedDisplayName("Trait_GermContainment")] // Стерильность
+        public float? GermContainment { get; set; }
+
+        [ColorizeOrder(ColorizeOrderOption.Ascending)]
+        [LocalizedDisplayName("Trait_GermResistance")] // Устойчивость к болезням
+        public float? GermResistance { get; set; }
 
         [ColorizeOrder(ColorizeOrderOption.Ascending)]
         [LocalizedDisplayName("Trait_EatingSpeed")] // Скорость поглощения пищи

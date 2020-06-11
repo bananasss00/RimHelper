@@ -89,7 +89,7 @@ namespace RimHelperProxyMod.Functions
                 if (hasCombatExtended)
                 {
                     var ceAmmo = d.comps.FirstOrDefault(x => x.GetType() == ammoUserType); // d.GetCompProperties<CompProperties_AmmoUser>()
-                    row.DamageType = ceAmmo != null ? Traverse.Create(ceAmmo).Field("ammoSet").Property("LabelCap").GetValue<string>() : verb.defaultProjectile.projectile.damageDef.label;
+                    row.DamageType = ceAmmo != null ? Traverse.Create(ceAmmo).Field("ammoSet").Field("label").GetValue<string>() : verb.defaultProjectile.projectile.damageDef.label;
                     row.CE_SightsEfficiency = d.GetStatValueAbstract(StatDef.Named("SightsEfficiency")).ToPercent();
                     row.CE_ShotSpread = d.GetStatValueAbstract(StatDef.Named("ShotSpread"));
                     row.CE_SwayFactor = d.GetStatValueAbstract(StatDef.Named("SwayFactor"));

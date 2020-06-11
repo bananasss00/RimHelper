@@ -312,6 +312,8 @@
 	<Tool_PlantWorkSpeed>Скорость работы с растениями</Tool_PlantWorkSpeed>
 	<Tool_CookSpeed>Скорость приготовления пищи</Tool_CookSpeed>
 	<Tool_ButcheryFleshSpeed>Скорость разделки</Tool_ButcheryFleshSpeed>
+	<Tool_GermContainment>Стерильность</Tool_GermContainment>
+	<Tool_GermResistance>Устойчивость к болезням</Tool_GermResistance>
 	
 	<!--Plant:-->
 	<Plant_NutritionPer10Days>Питательность урожая за 10 дней(Почва 180%)</Plant_NutritionPer10Days>
@@ -375,7 +377,9 @@
 	<Trait_MeleeParryChance>Шанс парировать в ближнем бою</Trait_MeleeParryChance>
 	<Trait_SexFrequency>Сексуальное влечение</Trait_SexFrequency>
 	<Trait_PainShockThreshold>Порог переносимости боли</Trait_PainShockThreshold>
+	<Trait_PawnTrapSpringChance>Шанс активации ловушек</Trait_PawnTrapSpringChance>
 	<Trait_MeleeDodgeChance>Шанс уворота в рукопашной</Trait_MeleeDodgeChance>
+	<Trait_IncomingDamageFactor>Множитель получаемого урона</Trait_IncomingDamageFactor>
 	<Trait_SexAbility>Сексуальные навыки</Trait_SexAbility>
 	<Trait_HungerRateMultiplier>Множитель голода</Trait_HungerRateMultiplier>
 	<Trait_RestRateMultiplier>Эффективность сна</Trait_RestRateMultiplier>
@@ -388,8 +392,10 @@
 	<Trait_ResearchSpeed>Скорость исследования</Trait_ResearchSpeed>
 	<Trait_ConstructionSpeed>Скорость строительства</Trait_ConstructionSpeed>
 	<Trait_ConstructSuccessChance>Шанс успешного строительства</Trait_ConstructSuccessChance>
+	<Trait_GeneralLaborSpeed>Скорость общей работы</Trait_GeneralLaborSpeed>
 	<Trait_SculptingSpeed>Скорость ваяния</Trait_SculptingSpeed>
 	<Trait_PsychicSensitivity>Психочувствительность</Trait_PsychicSensitivity>
+	<Trait_PawnBeauty>Красота</Trait_PawnBeauty>
 	<Trait_NegotiationAbility>Способность к переговорам</Trait_NegotiationAbility>
 	<Trait_SocialImpact>Социальное влияние</Trait_SocialImpact>
 	<Trait_AnimalGatherSpeed>Скорость работы с животными</Trait_AnimalGatherSpeed>
@@ -415,6 +421,8 @@
 	<Trait_MedicalTendQuality>Качество лечения</Trait_MedicalTendQuality>
 	<Trait_MedicalOperationSpeed>Скорость проведения медпроцедур</Trait_MedicalOperationSpeed>
 	<Trait_MedicalTendSpeed>Скорость лечения</Trait_MedicalTendSpeed>
+	<Trait_GermContainment>Стерильность</Trait_GermContainment>
+	<Trait_GermResistance>Устойчивость к болезням</Trait_GermResistance>
 	<Trait_EatingSpeed>Скорость поглощения пищи</Trait_EatingSpeed>
 	<Trait_SmithingSpeed>Скорость ковки</Trait_SmithingSpeed>
 	<Trait_TailoringSpeed>Скорость шитья</Trait_TailoringSpeed>

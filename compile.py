@@ -65,7 +65,8 @@ if __name__ == '__main__':
             os.system(f'"{DEVENV_PATH}" /build Release RimHelper.sln')
             os.system(f'"{DEVENV_PATH}" /build Release RimHelper-1.1.sln')
             [clean_project(dir) for dir in ['DebugLibrary', 'RimHelperProxyMod', 'RimHelper', 'IPCInterface', 'DebugLibrary-1.1', 'RimHelperProxyMod-1.1']]
-            #os.rename('_Release_/RimHelperProxyMod/Common/Assemblies/SharedMemory.dll', '_Release_/RimHelperProxyMod/Common/Assemblies/$haredMemory.dll')
+            os.rename('_Release_/RimHelperProxyMod/Assemblies/SharedMemory.dll', '_Release_/RimHelperProxyMod/Assemblies/$haredMemory.dll')
+            os.rename('_Release_/RimHelperProxyMod/1.1/Assemblies/SharedMemory.dll', '_Release_/RimHelperProxyMod/1.1/Assemblies/$haredMemory.dll')
         else:
             print(f'BAD DEVENV PATH: {DEVENV_PATH}')
 
