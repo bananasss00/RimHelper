@@ -33,11 +33,11 @@ namespace RimHelperProxyMod.Functions
             if (td.conflictingTraits?.Any() ?? false)
                 conflictingTraits = String.Join(", ", td.conflictingTraits.Select(x => x.defName).OrderBy(x => x).ToArray());
             if (td.disabledWorkTypes?.Any() ?? false)
-                disabledWorkTypes = String.Join(", ", td.disabledWorkTypes.Select(x => x.LabelCap).OrderBy(x => x).ToArray());
+                disabledWorkTypes = String.Join(", ", td.disabledWorkTypes.Select(x => x.label).OrderBy(x => x).ToArray());
             if (td.disabledWorkTags != WorkTags.None)
                 disabledWorkTags = td.disabledWorkTags.ToString();
             if (td.requiredWorkTypes?.Any() ?? false)
-                requiredWorkTypes = String.Join(", ", td.requiredWorkTypes.Select(x => x.LabelCap).OrderBy(x => x).ToArray());
+                requiredWorkTypes = String.Join(", ", td.requiredWorkTypes.Select(x => x.label).OrderBy(x => x).ToArray());
             if (td.requiredWorkTags != WorkTags.None)
                 requiredWorkTags = td.requiredWorkTags.ToString();
 

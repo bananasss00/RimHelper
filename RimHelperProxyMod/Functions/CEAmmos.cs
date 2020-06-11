@@ -52,13 +52,13 @@ namespace RimHelperProxyMod.Functions
             foreach (var ammoType in Traverse.Create(ammoSetDef).Field("ammoTypes").GetValue<IEnumerable>())
             {
                 // default fields
-                var ammoLabelCap = Traverse.Create(ammoType).Field("ammo").Property("LabelCap").GetValue<string>();
+                var ammoLabelCap = Traverse.Create(ammoType).Field("ammo").Field("label").GetValue<string>();
                 var ammoDescriptionDetailed = Traverse.Create(ammoType).Field("ammo").Property("DescriptionDetailed").GetValue<string>();
 
                 // ammo users
                 string users = String.Join(Environment.NewLine,
                     Traverse.Create(ammoType).Field("ammo").Property("Users").GetValue< List<ThingDef> >()
-                    .Select(x => x.LabelCap)
+                    .Select(x => x.label)
                     .ToArray()
                 );
                 ammoDescriptionDetailed += $"{Environment.NewLine}{users}";

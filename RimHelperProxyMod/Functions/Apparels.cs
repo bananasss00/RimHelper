@@ -75,8 +75,8 @@ namespace RimHelperProxyMod.Functions
 
                 row.Material = defStuff?.label;
                 row.CanCraft = d.CanCraft();
-                row.Body = String.Join(",", d.apparel.bodyPartGroups.Select(x => x.LabelCap).ToArray());
-                row.Layer = String.Join(",", d.apparel.layers.Select(x => x.LabelCap).ToArray());
+                row.Body = String.Join(",", d.apparel.bodyPartGroups.Select(x => x.label).ToArray());
+                row.Layer = String.Join(",", d.apparel.layers.Select(x => x.label).ToArray());
                 row.ArmorBlunt = ceBluntStatWorker ? ArmorRating_Blunt.RoundTo2() : ArmorRating_Blunt.ToPercent();
                 row.ArmorSharp = ceSharpStatWorker ? ArmorRating_Sharp.RoundTo2() : ArmorRating_Sharp.ToPercent();
                 row.ArmorHeat = d.GetStatValueAbstract(StatDefOf.ArmorRating_Heat, defStuff).Nullify().ToPercent();

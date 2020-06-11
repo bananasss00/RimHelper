@@ -108,10 +108,10 @@ namespace RimHelperProxyMod.Functions
             {
                 var path = categoryDef.Parents
                     .Where(x => !x.defName.Equals("Root"))
-                    .Select(x => x.LabelCap)
+                    .Select(x => x.label)
                     .Reverse()
                     .ToList();
-                path.Add(categoryDef.LabelCap);
+                path.Add(categoryDef.label);
                 return String.Join("/", path.ToArray());
             }
 
