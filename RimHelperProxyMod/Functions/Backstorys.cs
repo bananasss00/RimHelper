@@ -34,10 +34,10 @@ namespace RimHelperProxyMod.Functions
                 row.spawnCategories = String.Join(", ", bs.spawnCategories.OrderBy(x => x).ToArray());
 
             if (bs.DisabledWorkGivers?.Any() ?? false)
-                row.DisabledWorkGivers = String.Join(", ", bs.DisabledWorkGivers.Select(x => x.LabelCap).OrderBy(x => x).ToArray());
+                row.DisabledWorkGivers = String.Join(", ", bs.DisabledWorkGivers.Select(x => x.label).OrderBy(x => x).ToArray());
 
             if (bs.DisabledWorkTypes?.Any() ?? false)
-                row.DisabledWorkTypes = String.Join(", ", bs.DisabledWorkTypes.Select(x => x.LabelCap).OrderBy(x => x).ToArray());
+                row.DisabledWorkTypes = String.Join(", ", bs.DisabledWorkTypes.Select(x => x.label).OrderBy(x => x).ToArray());
 
             if (bs.disallowedTraits?.Any() ?? false)
                 row.disallowedTraits = String.Join(", ", bs.disallowedTraits.Select(x => x.def.defName).OrderBy(x => x).ToArray());

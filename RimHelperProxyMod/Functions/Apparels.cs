@@ -84,12 +84,15 @@ namespace RimHelperProxyMod.Functions
                 row.InsulationHeat = d.GetStatValueAbstract(StatDefOf.Insulation_Heat, defStuff).Nullify().RoundTo2();
 
                 // AutoStatdefs
-                foreach (var offset in d.equippedStatOffsets)
+                if (d.equippedStatOffsets != null)
                 {
-                    var prop = typeof(Apparel).GetProperty(offset.stat.defName);
-                    if (prop != null)
+                    foreach (var offset in d.equippedStatOffsets)
                     {
-                        prop.SetValue(row, offset.value.Nullify().ByStyle(offset.stat.toStringStyle), null);
+                        var prop = typeof(Apparel).GetProperty(offset.stat.defName);
+                        if (prop != null)
+                        {
+                            prop.SetValue(row, offset.value.Nullify().ByStyle(offset.stat.toStringStyle), null);
+                        }
                     }
                 }
             }
