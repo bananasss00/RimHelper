@@ -91,7 +91,7 @@
     <ProjectReference Include="..\IPCInterface\IPCInterface.csproj">
       <Project>{7e24fc2c-90a3-47cb-8689-9fedb15e4356}</Project>
       <Name>IPCInterface</Name>
-      <Private>False</Private>
+      <Private>True</Private>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

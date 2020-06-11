@@ -43,7 +43,7 @@ if __name__ == '__main__':
     fix_harmony_namespace('RimHelperProxyMod-1.1')
     fix_harmony_namespace('DebugLibrary-1.1')
     fix_csproj('RimHelperProxyMod-1.1/RimHelperProxyMod.csproj', [
-        {'from': '\\RimHelperProxyMod\\Assemblies\\', 'to': '\\RimHelperProxyMod\\v1.1\\Assemblies\\'}
+        {'from': '\\RimHelperProxyMod\\Assemblies\\', 'to': '\\RimHelperProxyMod\\1.1\\Assemblies\\'}
     ])
     fix_csproj('DebugLibrary-1.1/DebugLibrary.csproj')
     with open('RimHelperProxyMod-1.1/Harmony/HM.cs', 'r+', encoding='utf-8') as sln:
@@ -65,9 +65,7 @@ if __name__ == '__main__':
             os.system(f'"{DEVENV_PATH}" /build Release RimHelper.sln')
             os.system(f'"{DEVENV_PATH}" /build Release RimHelper-1.1.sln')
             [clean_project(dir) for dir in ['DebugLibrary', 'RimHelperProxyMod', 'RimHelper', 'IPCInterface', 'DebugLibrary-1.1', 'RimHelperProxyMod-1.1']]
-            os.rename('_Release_/RimHelperProxyMod/Common/Assemblies/SharedMemory.dll', '_Release_/RimHelperProxyMod/Common/Assemblies/$haredMemory.dll')
-            shutil.copyfile('_Release_/RimHelperProxyMod/Common/Assemblies/$haredMemory.dll', '_Release_/RimHelperProxyMod/Assemblies/$haredMemory.dll')
-            shutil.copyfile('_Release_/RimHelperProxyMod/Common/Assemblies/0IPCInterface.dll', '_Release_/RimHelperProxyMod/Assemblies/0IPCInterface.dll')
+            #os.rename('_Release_/RimHelperProxyMod/Common/Assemblies/SharedMemory.dll', '_Release_/RimHelperProxyMod/Common/Assemblies/$haredMemory.dll')
         else:
             print(f'BAD DEVENV PATH: {DEVENV_PATH}')
 
