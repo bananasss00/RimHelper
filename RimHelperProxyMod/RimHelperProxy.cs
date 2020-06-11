@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Reflection;
 using System.Threading;
-using Harmony;
 using RimHelperProxyMod.Functions;
 using Verse;
 using IPCInterface;
-using IPCInterface.HarmonyBrowser;
+using RimHelperProxyMod.Harmony;
 
 namespace RimHelperProxyMod
 {
@@ -17,7 +14,7 @@ namespace RimHelperProxyMod
             IPC.Create();
             Log.Warning($"[RimHelperProxy] Shared memory with size: {IPC.MemorySize / (1024 * 1024)} Mb allocated!");
 
-            HarmonyInstance.Create("rimworld.pirateby.mod.rimhelperproxy").PatchAll(Assembly.GetExecutingAssembly());
+            HM.Init();
 
             new Thread(() => // Exception not handling from another threads!
             {
@@ -104,39 +101,6 @@ namespace RimHelperProxyMod
                             break;
                         case State.InjectDll:
                             IPC.StringBuf = InjectDll.GetResult(IPC.GetObjectBuf<InjectParameters>());
-                            break;
-                        case State.GetAllHarmonyPatches:
-                            IPC.StringBuf = HarmonyBrowser.GetAllHarmonyPatches();
-                            break;
-                        case State.StartHarmonyProfiling:
-                            HarmonyBrowser.StartProfiling();
-                            break;
-                        case State.StartHarmonyPatchesProfiling:
-                            HarmonyBrowser.StartPatchesProfiling(IPC.GetObjectBuf<HarmonyInstances>());
-                            break;
-                        case State.StartGameProfiling:
-                            HarmonyBrowser.StartGameProfiling(IPC.GetObjectBuf<string[]>());
-                            break;
-                        case State.StartGameProfilingTickerList:
-                            HarmonyBrowser.StartGameProfilingTickerList();
-                            break;
-                        case State.GetHarmonyProfilingResults:
-                            IPC.SetObjectBuf(HarmonyBrowser.GetProfilingResults());
-                            break;
-                        case State.ResetHarmonyProfilingResults:
-                            HarmonyBrowser.ResetProfilingResults();
-                            break;
-                        case State.HarmonyProfilingUnpatchAll:
-                            HarmonyBrowser.UnpatchAll();
-                            break;
-                        case State.HarmonyUnpatchInstances:
-                            HarmonyBrowser.Unpatch(IPC.GetObjectBuf<List<HarmonyUnpatch>>());
-                            break;
-                        case State.GetHarmonyInstances:
-                            IPC.SetObjectBuf(HarmonyBrowser.GetHarmonyInstances());
-                            break;
-                        case State.GetHarmonyPatchesForInstances:
-                            IPC.SetObjectBuf(HarmonyBrowser.GetHarmonyPatchesForInstances(IPC.GetObjectBuf<List<string>>()));
                             break;
                         case State.GcCollect:
                             GC.Collect(GC.MaxGeneration, GCCollectionMode.Forced);

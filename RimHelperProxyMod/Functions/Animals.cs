@@ -33,7 +33,7 @@ namespace RimHelperProxyMod.Functions
             return rows;
         }
 
-        private static Animal MakeRow(Verse.ThingDef d)
+        private static Animal MakeRow(ThingDef d)
         {
             var row = new Animal {Label = d.LabelCap, Description = d.DescriptionDetailed};
             try

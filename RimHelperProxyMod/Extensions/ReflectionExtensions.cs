@@ -1,10 +1,5 @@
 ﻿using System.Linq;
 using System.Reflection;
-using System.Text;
-using RimHelperProxyMod.Harmony;
-using RimWorld;
-using Verse;
-using Verse.AI;
 
 namespace RimHelperProxyMod.Extensions
 {

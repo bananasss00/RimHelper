@@ -53,7 +53,6 @@
             this.дампМатериаловИХарактеристикToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.дампОружияИОдеждыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.injectDllAndRunToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.harmonyBrowserToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gCCollectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.языкToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cbTabs = new System.Windows.Forms.ComboBox();
@@ -61,10 +60,10 @@
             this.btnResetCache = new System.Windows.Forms.Button();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
@@ -248,7 +247,6 @@
             this.дампМатериаловИХарактеристикToolStripMenuItem,
             this.дампОружияИОдеждыToolStripMenuItem,
             this.injectDllAndRunToolStripMenuItem,
-            this.harmonyBrowserToolStripMenuItem,
             this.gCCollectToolStripMenuItem});
             this.debugToolStripMenuItem.Name = "debugToolStripMenuItem";
             this.debugToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
@@ -296,14 +294,6 @@
             this.injectDllAndRunToolStripMenuItem.Size = new System.Drawing.Size(265, 22);
             this.injectDllAndRunToolStripMenuItem.Text = "InjectDll and Run";
             this.injectDllAndRunToolStripMenuItem.Click += new System.EventHandler(this.injectDllAndRunToolStripMenuItem_Click);
-            // 
-            // harmonyBrowserToolStripMenuItem
-            // 
-            this.harmonyBrowserToolStripMenuItem.Enabled = false;
-            this.harmonyBrowserToolStripMenuItem.Name = "harmonyBrowserToolStripMenuItem";
-            this.harmonyBrowserToolStripMenuItem.Size = new System.Drawing.Size(265, 22);
-            this.harmonyBrowserToolStripMenuItem.Text = "Harmony.Browser";
-            this.harmonyBrowserToolStripMenuItem.Click += new System.EventHandler(this.harmonyBrowserToolStripMenuItem_Click);
             // 
             // gCCollectToolStripMenuItem
             // 
@@ -378,6 +368,27 @@
             this.panel1.Size = new System.Drawing.Size(988, 29);
             this.panel1.TabIndex = 9;
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(664, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(117, 23);
+            this.button4.TabIndex = 25;
+            this.button4.Text = "Выбор материала";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(387, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(21, 21);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "X";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(787, 3);
@@ -398,27 +409,6 @@
             this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.textBox4.Size = new System.Drawing.Size(988, 75);
             this.textBox4.TabIndex = 26;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(387, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(21, 21);
-            this.button3.TabIndex = 24;
-            this.button3.Text = "X";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(664, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(117, 23);
-            this.button4.TabIndex = 25;
-            this.button4.Text = "Выбор материала";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Visible = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
@@ -474,7 +464,6 @@
         private System.Windows.Forms.ToolStripMenuItem exportToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem инцидентыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pawnHediffsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem harmonyBrowserToolStripMenuItem;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox4;

@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\_Release_\RimHelperProxyMod\Common\Assemblies\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -25,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\_Release_\RimHelperProxyMod\Common\Assemblies\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -43,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Extensions\ContainersExtensions.cs" />
-    <Compile Include="HarmonyBrowser\HarmonyInstances.cs" />
     <Compile Include="IPC.cs" />
     <Compile Include="IPCInterface.cs" />
     <Compile Include="Localization.cs" />
@@ -67,8 +66,4 @@
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>xcopy "$(TargetPath)" "c:\Games\RimWorld v1.0.2059\Mods\RimHelperProxyMod\Assemblies\" /y
-xcopy "$(TargetPath)" "c:\Games\RimWorld v1.0.2282\Mods\RimHelperProxyMod\Assemblies\" /y</PostBuildEvent>
-  </PropertyGroup>
 </Project>

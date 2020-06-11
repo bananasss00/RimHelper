@@ -1,4 +1,9 @@
-﻿using System.Text;
+﻿using System;
+using System.Linq;
+using System.Text;
+using RimWorld;
+using Verse;
+using Harmony;
 
 namespace DebugLibrary
 {

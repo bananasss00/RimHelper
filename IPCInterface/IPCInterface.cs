@@ -26,18 +26,6 @@ namespace IPCInterface
         BuildingStuffDump,
         WeaponApparelDump,
         InjectDll,
-// harmony profiler commands //
-        GetAllHarmonyPatches,
-        StartHarmonyProfiling,
-        StartHarmonyPatchesProfiling,
-        StartGameProfiling,
-        StartGameProfilingTickerList,
-        GetHarmonyProfilingResults,
-        ResetHarmonyProfilingResults,
-        HarmonyProfilingUnpatchAll,
-        HarmonyUnpatchInstances,
-        GetHarmonyInstances,
-        GetHarmonyPatchesForInstances,
         GcCollect
     }
 

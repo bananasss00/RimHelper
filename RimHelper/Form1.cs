@@ -180,7 +180,6 @@ namespace RimHelper
             дампМатериаловИХарактеристикToolStripMenuItem.Enabled = active;
             дампОружияИОдеждыToolStripMenuItem.Enabled = active;
             injectDllAndRunToolStripMenuItem.Enabled = active;
-            harmonyBrowserToolStripMenuItem.Enabled = active;
             gCCollectToolStripMenuItem.Enabled = active;
         }
 
@@ -409,11 +408,6 @@ namespace RimHelper
         private void pawnHediffsToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
             IPC.StateCallback(State.GetPawnsHeddifs, () => MessageBox.Show(IPC.StringBuf));
-        }
-
-        private void harmonyBrowserToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            new HarmonyBrowserForm().ShowDialog();
         }
 
         private void exportTabToolStripMenuItem_Click(object sender, EventArgs e)

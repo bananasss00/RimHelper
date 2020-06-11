@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using Harmony;
 using RimWorld;
 using Verse;
-using IPCInterface.Rows;
 using RimHelperProxyMod.Extensions;
 using Plant = IPCInterface.Rows.Plant;
 

@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\_Release_\RimHelper\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -28,7 +28,7 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\_Release_\RimHelper\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -76,18 +76,6 @@
     <Compile Include="ColumnFilter.Designer.cs">
       <DependentUpon>ColumnFilter.cs</DependentUpon>
     </Compile>
-    <Compile Include="HarmonyBrowserForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HarmonyBrowserForm.Designer.cs">
-      <DependentUpon>HarmonyBrowserForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="HarmonyBrowserResults.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="HarmonyBrowserResults.Designer.cs">
-      <DependentUpon>HarmonyBrowserResults.cs</DependentUpon>
-    </Compile>
     <Compile Include="InjectDllForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,12 +103,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HarmonyBrowserForm.resx">
-      <DependentUpon>HarmonyBrowserForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="HarmonyBrowserResults.resx">
-      <DependentUpon>HarmonyBrowserResults.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="InjectDllForm.resx">
       <DependentUpon>InjectDllForm.cs</DependentUpon>
