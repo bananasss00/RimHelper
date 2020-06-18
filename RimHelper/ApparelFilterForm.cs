@@ -100,8 +100,12 @@ namespace RimHelper
                 List<Apparel> filtered = ApparelFilter.FilterApparels(allItems, fieldName, comboBox3.SelectedIndex == 0,
                     comboBox1.SelectedIndex == 0, bodyResultsCount);
 
+                if (checkBox1.Checked)
+                {
+                    tab.ClearCart();
+                }
                 tab.AddInToCart(filtered);
-                tab.ActivateCart(true);
+                tab.ActivateCart(true, true);
                 this.Close();
             }
             else
@@ -116,6 +120,22 @@ namespace RimHelper
             if (stuffName == null)
                 throw new Exception("can't get checked stuff");
             TabApparel.StuffActiveState[stuffName] = e.NewValue == CheckState.Checked;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
+            {
+                checkedListBox1.SetItemChecked(i, true);
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < checkedListBox1.Items.Count; i++)
+            {
+                checkedListBox1.SetItemChecked(i, false);
+            }
         }
     }
 

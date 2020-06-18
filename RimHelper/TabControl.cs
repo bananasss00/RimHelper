@@ -30,7 +30,7 @@ namespace RimHelper
         SelectedObject GetSelectedDescription();
 
         bool CartIsActive();
-        void ActivateCart(bool state);
+        void ActivateCart(bool state, bool forceUpdate = false);
         void AddSelectedInToCart();
         void RemoveSelectedFromCart();
         void ClearCart();
@@ -127,11 +127,11 @@ namespace RimHelper
 
         public bool CartIsActive() => _cartActive;
 
-        public void ActivateCart(bool state)
+        public void ActivateCart(bool state, bool forceUpdate = false)
         {
             bool reset = _cartActive != state;
             _cartActive = state;
-            if (reset) Bind();
+            if (reset || forceUpdate) Bind();
         }
 
         public void AddSelectedInToCart()
