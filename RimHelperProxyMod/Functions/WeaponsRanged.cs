@@ -48,7 +48,8 @@ namespace RimHelperProxyMod.Functions
         private static WeaponRanged MakeRow(ThingDef d, bool hasCombatExtended, Type ammoUserType = null)
         {
             var row = new WeaponRanged { Label = d.LabelCap, Description = d.DescriptionDetailed, MarketValue = d.BaseMarketValue, ItemsOnMap = d.CountOnMap()};
-            
+            row.TechLevel = d.techLevel.ToStringHuman().CapitalizeFirst();
+
             try
             {
                 row.TexturePath = d.modContentPack.RootDir + @"\Textures\" + d.graphicData.texPath;
@@ -84,8 +85,7 @@ namespace RimHelperProxyMod.Functions
                 row.Cooldown = cooldown;
                 row.WarmupTime = warmup;
                 row.Accuracy = getAccuracyStr(minRange, maxRange, accuracyTouch, accuracyShort, accuracyMedium, accuracyLong);
-                row.TechLevel = d.techLevel.ToStringHuman().CapitalizeFirst();
-				
+
                 if (hasCombatExtended)
                 {
                     var ceAmmo = d.comps.FirstOrDefault(x => x.GetType() == ammoUserType); // d.GetCompProperties<CompProperties_AmmoUser>()

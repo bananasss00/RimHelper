@@ -13,6 +13,9 @@ namespace IPCInterface.Rows
         [LocalizedDisplayName("ItemsOnMap")]
         public float? ItemsOnMap { get; set; }
 
+        [LocalizedDisplayName("TechLevel")]
+        public string TechLevel { get; set; }
+
         [ColorizeOrder(ColorizeOrderOption.Positive)]
         [LocalizedDisplayName("Apparel_CanCraft")] //есть рецепт
         public bool CanCraft { get; set; }

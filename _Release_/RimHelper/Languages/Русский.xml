@@ -59,6 +59,7 @@
 
 	<Label>Имя</Label>
 	<ItemsOnMap>На карте</ItemsOnMap>
+	<TechLevel>Техн. уровень</TechLevel>
 	
 	<Material_StuffPower_Armor_Sharp>Броня: Проникновение</Material_StuffPower_Armor_Sharp>
 	<Material_StuffPower_Armor_Blunt>Броня: Удар</Material_StuffPower_Armor_Blunt>
@@ -175,7 +176,6 @@
 	<WeaponRanged_MarketValue>Цена</WeaponRanged_MarketValue>
 	<WeaponRanged_Accuracy>Аккуратность</WeaponRanged_Accuracy>
 	<WeaponRanged_DamageType>Тип урона</WeaponRanged_DamageType>
-	<WeaponRanged_TechLevel>Техн. уровень</WeaponRanged_TechLevel>
 	<WeaponRanged_CE_OneHanded>CE: Одноручное</WeaponRanged_CE_OneHanded>
 	<WeaponRanged_CE_SightsEfficiency>CE: Эфф. прицеливания</WeaponRanged_CE_SightsEfficiency>
 	<WeaponRanged_CE_ShotSpread>CE: Разброс</WeaponRanged_CE_ShotSpread>
@@ -190,7 +190,6 @@
 	<WeaponMelee_MeleeCritChance>Шанс критического удара</WeaponMelee_MeleeCritChance>
 	<WeaponMelee_MeleeDodgeChance>Шанс уворота в рукопашной</WeaponMelee_MeleeDodgeChance>
 	<WeaponMelee_MeleeParryChance>Шанс парировать в ближнем бою</WeaponMelee_MeleeParryChance>
-	<WeaponMelee_TechLevel>Техн. уровень</WeaponMelee_TechLevel>
 	<WeaponMelee_CE_OneHanded>CE: Одноручное</WeaponMelee_CE_OneHanded>
 	<WeaponMelee_CE_MeleeCounterParryBonus>CE: Бонус к игнорированию парирования</WeaponMelee_CE_MeleeCounterParryBonus>
 	<WeaponMelee_WeaponTags>Тэги</WeaponMelee_WeaponTags>

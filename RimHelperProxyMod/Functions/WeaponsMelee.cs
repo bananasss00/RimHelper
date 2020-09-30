@@ -55,7 +55,8 @@ namespace RimHelperProxyMod.Functions
         private static WeaponMelee MakeRow(ThingDef d)
         {
             var row = new WeaponMelee { Label = d.LabelCap, Description = d.DescriptionDetailed, MarketValue = d.BaseMarketValue, ItemsOnMap = d.CountOnMap()};
-            
+            row.TechLevel = d.techLevel.ToStringHuman().CapitalizeFirst();
+
             try
             {
                 row.TexturePath = d.modContentPack.RootDir + @"\Textures\" + d.graphicData.texPath;
@@ -95,7 +96,6 @@ namespace RimHelperProxyMod.Functions
                 row.Dps = (float)Math.Round(d.GetStatValueAbstract(StatDefOf.MeleeWeapon_AverageDPS), 2);
                 row.Damage = damage;
                 row.Cooldown = cooldown;
-                row.TechLevel = d.techLevel.ToStringHuman().CapitalizeFirst();
 
                 //public float? MeleeCritChance { get; set; } //Шанс критического удара
                 //public float? MeleeDodgeChance { get; set; } //Шанс уворота в рукопашной

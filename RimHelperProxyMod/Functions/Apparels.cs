@@ -52,6 +52,7 @@ namespace RimHelperProxyMod.Functions
 
             row.CanCraft = d.CanCraft(); //d.recipeMaker != null;
             row.DefMaterial = defStuff?.label;
+            row.TechLevel = d.techLevel.ToStringHuman().CapitalizeFirst();
 
             try
             {

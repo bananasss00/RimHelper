@@ -13,6 +13,9 @@ namespace IPCInterface.Rows
         [LocalizedDisplayName("ItemsOnMap")]
         public float? ItemsOnMap { get; set; }
 
+        [LocalizedDisplayName("TechLevel")]
+        public string TechLevel { get; set; }
+
         [ColorizeOrder(ColorizeOrderOption.Positive)]
         [LocalizedDisplayName("WeaponRanged_CanCraft")] //есть рецепт
         public bool CanCraft { get; set; }
@@ -51,9 +54,6 @@ namespace IPCInterface.Rows
 
         [LocalizedDisplayName("WeaponRanged_Accuracy")]
         public string Accuracy { get; set; }
-
-        [LocalizedDisplayName("WeaponRanged_TechLevel")]
-        public string TechLevel { get; set; }
 
         [LocalizedDisplayName("WeaponRanged_DamageType")]
         public string DamageType { get; set; }

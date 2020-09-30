@@ -13,6 +13,9 @@ namespace IPCInterface.Rows
         [LocalizedDisplayName("ItemsOnMap")]
         public float? ItemsOnMap { get; set; }
 
+        [LocalizedDisplayName("TechLevel")]
+        public string TechLevel { get; set; }
+
         [ColorizeOrder(ColorizeOrderOption.Positive)]
         [LocalizedDisplayName("WeaponMelee_CanCraft")] //есть рецепт
         public bool CanCraft { get; set; }
@@ -44,9 +47,6 @@ namespace IPCInterface.Rows
         [ColorizeOrder(ColorizeOrderOption.Ascending)]
         [LocalizedDisplayName("WeaponMelee_MeleeParryChance")]
         public float? MeleeParryChance { get; set; } //Шанс парировать в ближнем бою
-
-        [LocalizedDisplayName("WeaponMelee_TechLevel")]
-        public string TechLevel { get; set; }
 
         [ColorizeOrder(ColorizeOrderOption.Positive)]
         [LocalizedDisplayName("WeaponMelee_CE_OneHanded")]
