@@ -486,15 +486,6 @@ namespace RimHelper
             }
         }
 
-        private void gCCollectToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            IPC.StateCallback(State.GcCollect, () =>
-            {
-                //MessageBox.Show("Finish");
-                return 0;
-            });
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             GetCurrentTab()?.ResetFilters();
@@ -508,6 +499,35 @@ namespace RimHelper
                 if (form.ShowDialog() == DialogResult.OK)
                     tab.ResetFilters();
             }
+        }
+
+        private void x1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            IPC.StateCallback(State.GcCollect, () =>
+            {
+                //MessageBox.Show("Finish");
+                return 0;
+            });
+        }
+
+        private void x5ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 5; i++)
+                IPC.StateCallback(State.GcCollect, () =>
+                {
+                    //MessageBox.Show("Finish");
+                    return 0;
+                });
+        }
+
+        private void x10ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 10; i++)
+                IPC.StateCallback(State.GcCollect, () =>
+                {
+                    //MessageBox.Show("Finish");
+                    return 0;
+                });
         }
     }
 }
