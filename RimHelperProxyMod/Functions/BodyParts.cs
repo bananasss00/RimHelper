@@ -14,7 +14,7 @@ namespace RimHelperProxyMod.Functions
             var rows = new List<BodyPart>();
 
             var dataSources = from d in DefDatabase<HediffDef>.AllDefs
-                where d.addedPartProps != null || d.spawnThingOnRemoved != null
+                where d.addedPartProps != null || d.spawnThingOnRemoved != null || d.countsAsAddedPartOrImplant
                 select d;
 
             foreach (var d in dataSources)
