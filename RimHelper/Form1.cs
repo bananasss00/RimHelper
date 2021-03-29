@@ -120,6 +120,11 @@ namespace RimHelper
                     IPC.StateCallback(State.GetDrugs, () => IPC.GetObjectBuf<List<Drug>>()),
                 dgv, comboBox1, textBox4, pictureBox1));
 
+            // Foods
+            tabs.Add(new RimHelper.TabControl<Food>("Tab_Foods".Translate(), () =>
+                    IPC.StateCallback(State.GetFoods, () => IPC.GetObjectBuf<List<Food>>()),
+                dgv, comboBox1, textBox4, pictureBox1));
+
             // BodyParts
             tabs.Add(new RimHelper.TabControl<BodyPart>("Tab_BodyParts".Translate(), () =>
                     IPC.StateCallback(State.GetBodyParts, () => IPC.GetObjectBuf<List<BodyPart>>()),

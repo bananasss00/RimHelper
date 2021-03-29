@@ -12,6 +12,7 @@ namespace IPCInterface
         GetAnimals,
         GetDebuffs,
         GetDrugs,
+        GetFoods,
         GetPawnsHeddifs,
         GetWeaponsRanged,
         GetWeaponsMelee,

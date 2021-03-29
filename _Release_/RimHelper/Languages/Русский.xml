@@ -26,6 +26,7 @@
 	<Tab_Animals>Животные</Tab_Animals>
 	<Tab_Debuffs>Дебафы</Tab_Debuffs>
 	<Tab_Drugs>Вещества</Tab_Drugs>
+	<Tab_Foods>Еда</Tab_Foods>
 	<Tab_BodyParts>Протезы</Tab_BodyParts>
 	<Tab_Facilities>Апгрейды построек</Tab_Facilities>
 	<Tab_Plant>Растения</Tab_Plant>
@@ -164,6 +165,17 @@
 	<Drug_BloodFiltration>Фильтрация крови</Drug_BloodFiltration>
 	<Drug_BloodPumping>Кровообращение</Drug_BloodPumping>
 	<Drug_Metabolism>Метаболизм</Drug_Metabolism>
+	
+	<Food_Nutrition>Питательность</Food_Nutrition>
+	<Food_JoyKind>Тип развлечения</Food_JoyKind>
+	<Food_Joy>Развлечение</Food_Joy>
+	<Food_IsCorpse>Труп</Food_IsCorpse>
+	<Food_IsMeat>Мясо</Food_IsMeat>
+	<Food_IsMeal>Еда</Food_IsMeal>
+	<Food_DrugCategory>Наркотик</Food_DrugCategory>
+	<Food_FoodType>Тип</Food_FoodType>
+	<Food_IngestEffect>Эффект</Food_IngestEffect>
+	<Food_Preferability>Предпочтение</Food_Preferability>
 	
 	<WeaponRanged_CanCraft>С рецептом</WeaponRanged_CanCraft>
 	<WeaponRanged_DPS>DPS</WeaponRanged_DPS>

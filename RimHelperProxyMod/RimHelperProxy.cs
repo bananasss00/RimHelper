@@ -66,6 +66,9 @@ namespace RimHelperProxyMod
                         case State.GetDrugs:
                             IPC.SetObjectBuf(Drugs.Get());
                             break;
+                        case State.GetFoods:
+                            IPC.SetObjectBuf(Foods.Get());
+                            break;
                         case State.GetActiveIncidents:
                             IPC.StringBuf = ActiveIncidents.Get();
                             break;

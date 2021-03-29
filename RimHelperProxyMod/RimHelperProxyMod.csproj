@@ -63,6 +63,7 @@
     <Compile Include="Extensions\PawnExtensions.cs" />
     <Compile Include="Extensions\ThingDefExtensions.cs" />
     <Compile Include="Extensions\UtilsExtensions.cs" />
+    <Compile Include="Functions\Foods.cs" />
     <Compile Include="Functions\Plants.cs" />
     <Compile Include="Functions\Traits.cs" />
     <Compile Include="Functions\Backstorys.cs" />
